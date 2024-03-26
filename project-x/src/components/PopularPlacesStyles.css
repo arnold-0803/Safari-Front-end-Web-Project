@@ -18,11 +18,12 @@
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10rem;
+  margin-top: -6rem;
 }
 
 .description-text{
   width: 45%;
+  height: 100vh;
   text-align: start;
   font-size: 1.1rem;
 }
@@ -53,6 +54,12 @@
   right: 0;
 }
 
+.extended-text{
+  margin-top: -3rem;
+  font-size: 1.1rem;
+  text-align: start;
+}
+
 @media screen and (max-width: 850px){
   .places{
     margin: 4rem 2rem;
@@ -67,7 +74,7 @@
   .destination-one-reverse{
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 2.5rem;
+    margin-top: -2rem;
   }
 
   .description-text{
@@ -81,5 +88,9 @@
 
   .image img{
     height: 250px;
+  }
+
+  .extended-text{
+    margin-top: 37rem;
   }
 }
