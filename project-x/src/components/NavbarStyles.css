@@ -1,6 +1,6 @@
 .NavbarItems{
   position: fixed;
-  top: 20px;
+  top: 5px;
   left: 50%;
   background: #fff;
   transform: translate(-50%);
