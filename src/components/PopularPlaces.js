@@ -8,7 +8,7 @@ const PopularPlaces = ({dataOne}) => {
       <p>Tour gives you the opportunity to explore destinations of your dream</p>
       <ul>
         {dataOne.length > 0 && dataOne.map(data => (
-          <li key={data}>
+          <li key={data.id}>
             <Place 
               data={data}
             />
