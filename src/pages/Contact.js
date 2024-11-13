@@ -1,10 +1,16 @@
+import { useEffect } from "react";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Foofer";
 import Reuseable from "../components/MainFrame";
 import Navbar from "../components/Navbar";
 import image from "../images/photo.avif";
 
-const Contact = () => {
+const Contact = ({scrollToTop}) => {
+
+  useEffect(() => {
+    scrollToTop();
+  }, [scrollToTop]);
+
   return (
     <div className="contact">
       <Navbar/>

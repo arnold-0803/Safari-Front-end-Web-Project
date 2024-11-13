@@ -3,7 +3,7 @@ import "./MainFrameStyles.css";
 const Reuseable = (props) => {
   return (
     <div className={props.cName}>
-      <img alt="image" src={props.heroImage} />
+      <img src={props.heroImage} alt={props.title}/>
       <div className="hero-text">
         <h1>{props.title}</h1>
         <p>{props.text}</p>

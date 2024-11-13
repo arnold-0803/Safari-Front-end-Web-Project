@@ -6,8 +6,14 @@ import image from "../images/image.png";
 import image1 from "../images/6.avif";
 import image2 from "../images/6.jpeg";
 import image3 from "../images/7.jpeg";
+import { useEffect } from "react";
 
-const Service = () => {
+const Service = ({scrollToTop}) => {
+
+  useEffect(() => {
+    scrollToTop();
+  }, [scrollToTop]);
+
   return (
     <div className="service">
       <Navbar/>
