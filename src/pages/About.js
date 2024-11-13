@@ -1,10 +1,16 @@
+import { useEffect } from "react";
 import AboutContent from "../components/AboutContent";
 import Footer from "../components/Foofer";
 import Reuseable from "../components/MainFrame";
 import Navbar from "../components/Navbar";
 import image from "../images/tour.avif";
 
-const About = () => {
+const About = ({scrollToTop}) => {
+
+  useEffect(() => {
+    scrollToTop();
+  }, [scrollToTop]);
+
   return (
     <div className="about">
       <Navbar/>

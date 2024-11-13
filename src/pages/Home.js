@@ -7,8 +7,14 @@ import image from "../images/premium_photo.avif";
 import image1 from "../images/4.avif";
 import image2 from "../images/5.avif";
 import image3 from "../images/5.jpeg";
+import { useEffect } from "react";
 
-const Home = () => {
+const Home = ({scrollToTop}) => {
+
+  useEffect(() => {
+    scrollToTop();
+  }, [scrollToTop]);
+
   return (
     <div className="home">
       <Navbar/>
