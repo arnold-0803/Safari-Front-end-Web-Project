@@ -13,7 +13,11 @@ const Navbar = () => {
 
   return(
     <nav className="navbar">
-      <Link to={"/"} className="navbar-logo"><h1>Safari</h1></Link>
+      <Link to={"/"} className="navbar-logo">
+        <h1 className="font-bold">
+          Safari
+        </h1>
+      </Link>
       <div className="menu-icons" onClick={handleToggle}>
         <i className={toggle ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
