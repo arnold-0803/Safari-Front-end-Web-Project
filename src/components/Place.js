@@ -7,8 +7,7 @@ function Place({data}){
         <div className={data.customClass}>
           <div className="description-text">
             <h2>{data.heading}</h2>
-            <p>{data.text}
-          </p>
+            <p>{data.text}</p>
           </div>
           <div className="image">
             <img src={data.image1} alt="" />
