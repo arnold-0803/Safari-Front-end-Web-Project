@@ -22,7 +22,7 @@
 }
 
 .navbar-logo h1{
-  color: #222;
+  color: #01959a;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -37,7 +37,7 @@
 
 .nav-link{
   text-decoration: none;
-  color: #222;
+  color: #01959a;
   font-size: 1rem;
   font-weight: 600;
   padding: 0.4rem 1rem;
@@ -69,10 +69,11 @@ button{
   border: none;
   cursor: pointer;
   transition: .2s ease-in-out;
+  color: #01959a;
 }
 
 button:hover{
-  background: #151516;
+  background: #01959a44;
   color: #fff;
 }
 
