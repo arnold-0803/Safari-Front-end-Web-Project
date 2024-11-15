@@ -7,7 +7,7 @@ function Place({data}){
       <div>
         <div className={data.customClass}>
           <div className="description-text">
-            <h2 className="font-thin text-[2.5rem] text-[#01959a]">
+            <h2 className="font-thin md:text-[2.5rem] text-[#01959a]">
               {data.heading}
             </h2>
             <p>{data.text}</p>
@@ -20,8 +20,9 @@ function Place({data}){
         <div className="text-start">
           {data.exText}
         </div>
-        <div>
-          <Link to={"/"}>
+        <div className="py-[15px] flex items-start">
+          <Link className="bg-[#01959a]"
+            to={"/"}>
             Plant a trip
           </Link>
         </div>
