@@ -1,26 +1,30 @@
-import TripData from "./TripData";
+import TripCard from "./TripCard";
 import "./TripStyles.css";
 
 const RecentTrips = (props) => {
   return (
     <div className="trip">
-      <h1>Recent Trips</h1>
-      <p>You can discover unique destinations
-      using Google Maps.</p>
+      <h1 className="heading">
+        Recent Trips
+      </h1>
+      <p className="subtitle">
+        You can discover unique destinations
+        using Google Maps.
+      </p>
       <div className="trip-card">
-        <TripData
+        <TripCard
           image={props.image1}
           heading={props.heading1}
           text={props.description1}
         />
 
-        <TripData
+        <TripCard
           image={props.image2}
           heading={props.heading2}
           text={props.description2}
         />
 
-        <TripData
+        <TripCard
           image={props.image3}
           heading={props.heading3}
           text={props.description3}
