@@ -38,7 +38,7 @@
 .nav-link{
   text-decoration: none;
   color: #01959a;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   padding: 0.4rem 1rem;
   white-space: nowrap;
@@ -64,7 +64,7 @@ button{
   padding: 0.5rem 1rem;
   white-space: nowrap;
   border-radius: 0.3rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   border: none;
   cursor: pointer;
