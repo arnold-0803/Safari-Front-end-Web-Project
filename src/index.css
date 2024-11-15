@@ -14,3 +14,11 @@
 .App{
   text-align: center;
 }
+
+.heading{
+  @apply text-[#01959a] font-light md:text-[3.5rem] max-[767px]:text-[1.6rem];
+}
+
+.subtitle{
+  @apply text-[#01959ac2] md:text-[1.1rem];
+}

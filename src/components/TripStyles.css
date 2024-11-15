@@ -3,10 +3,6 @@
   color: #2a2a2a;
 }
 
-.trip h1{
-  font-size: 3rem;
-}
-
 .trip-card{
   margin: 3rem 0;
   display: flex;

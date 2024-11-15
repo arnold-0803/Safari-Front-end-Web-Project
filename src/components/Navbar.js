@@ -1,7 +1,7 @@
 import "./NavbarStyles.css";
 import {Link} from "react-router-dom";
-import { MenuItems } from "./MenuItems";
 import { useState } from "react";
+import { MenuItems } from "../data/MenuItems";
 
 const Navbar = () => {
 

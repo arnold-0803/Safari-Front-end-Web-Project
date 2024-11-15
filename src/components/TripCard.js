@@ -1,4 +1,4 @@
-const TripData = (props) => {
+const TripCard = (props) => {
   return (
     <div className="t-card">
       <div className="t-image">
@@ -10,4 +10,4 @@ const TripData = (props) => {
   );
 }
  
-export default TripData;
+export default TripCard;
