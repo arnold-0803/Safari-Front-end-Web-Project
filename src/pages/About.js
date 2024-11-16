@@ -13,14 +13,25 @@ const About = ({scrollToTop}) => {
 
   return (
     <div className="about">
-      <Navbar/>
-      <Reuseable 
-        cName="sub-hero"
-        heroImage={image}
-        title="About Us"
-      />
-      <AboutContent/>
-      <Footer/>
+      <div>
+        <Navbar/>
+      </div>
+      <div>
+        <Reuseable 
+          cName="sub-hero"
+          heroImage={image}
+          title="About Us"
+        />
+      </div>
+      <div>
+        <h1 className="heading">
+          Know About Us
+        </h1>
+        <AboutContent/>
+      </div>
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 }
