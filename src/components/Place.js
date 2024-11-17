@@ -7,7 +7,7 @@ function Place({data}){
       <div>
         <div className={data.customClass}>
           <div className="description-text">
-            <h2 className="font-thin md:text-[2.5rem] text-[#01959a]">
+            <h2 className="font-thin md:text-[2.5rem] max-[767px]:text-[1.5rem] text-[#01959a]">
               {data.heading}
             </h2>
             <p>{data.text}</p>
@@ -21,9 +21,10 @@ function Place({data}){
           {data.exText}
         </div>
         <div className="py-[15px] flex items-start">
-          <Link className="bg-[#01959a]"
+          <Link className="bg-[#01959a] p-[8px_14px] text-[#fff] rounded-[30px]
+            hover:bg-[#01959ac4]"
             to={"/"}>
-            Plant a trip
+            Plan a trip
           </Link>
         </div>
       </div>

@@ -3,7 +3,7 @@ import "./TripStyles.css";
 
 const RecentTrips = (props) => {
   return (
-    <div className="trip">
+    <div className="segment">
       <h1 className="heading">
         Recent Trips
       </h1>
