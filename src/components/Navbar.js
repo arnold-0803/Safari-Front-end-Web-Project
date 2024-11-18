@@ -1,4 +1,3 @@
-import "./NavbarStyles.css";
 import {Link} from "react-router-dom";
 import { useState } from "react";
 import { MenuItems } from "../data/MenuItems";
@@ -12,24 +11,30 @@ const Navbar = () => {
   }
 
   return(
-    <nav className="navbar">
-      <Link to={"/"} className="navbar-logo">
-        <h1 className="font-bold">
+    <nav className="navbar fixed top-[1px] left-[50%] w-[99.2%] z-50 flex justify-between bg-[#fff]
+      translate-x-[-50%] items-center px-[15px] rounded-[5px] shadow-[0_5px_15px_0_rgba(0,0,0,.25)]">
+      <Link to={"/"}>
+        <h1 className="font-extrabold text-[2rem] text-[#01959a]">
           Safari
         </h1>
       </Link>
-      <div className="menu-icons" onClick={handleToggle}>
+      <div className="md:hidden cursor-pointer" 
+        onClick={handleToggle}
+      >
         <i className={toggle ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
       <ul className={toggle ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return(
             <li key={index}>
-              <Link to={item.url} className={item.cName}><i className={item.icon}></i>{item.title}</Link>
+              <Link className={`${item.cName} text-[#01959a] font-[600] p-[0.4rem_1rem]
+                text-[1.1rem] hover:bg-[#01959a] hover:text-[#fff] rounded-[4px]`} 
+                to={item.url}>
+                <i className={`${item.icon} pr-[5px]`}></i>{item.title}
+              </Link>
             </li>
           );
         })}
-        <button>Sign Up</button>
       </ul>
     </nav>
   );
