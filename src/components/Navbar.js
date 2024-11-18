@@ -18,7 +18,7 @@ const Navbar = () => {
           Safari
         </h1>
       </Link>
-      <div className="md:hidden cursor-pointer" 
+      <div className="md:hidden text-[1.5rem] text-[#01959a]" 
         onClick={handleToggle}
       >
         <i className={toggle ? "fas fa-times" : "fas fa-bars"}></i>
@@ -26,9 +26,11 @@ const Navbar = () => {
       <ul className={toggle ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return(
-            <li key={index}>
-              <Link className={`${item.cName} text-[#01959a] font-[600] p-[0.4rem_1rem]
-                text-[1.1rem] hover:bg-[#01959a] hover:text-[#fff] rounded-[4px]`} 
+            <li className="max-[767px]:pb-[10px]"
+              key={index}>
+              <Link className={`${item.cName} text-[#01959a] font-[600] md:p-[0.4rem_1rem]
+                text-[1.1rem] hover:bg-[#01959a] hover:text-[#fff] rounded-[4px] block
+                max-[767px]:p-[1rem]`} 
                 to={item.url}>
                 <i className={`${item.icon} pr-[5px]`}></i>{item.title}
               </Link>
