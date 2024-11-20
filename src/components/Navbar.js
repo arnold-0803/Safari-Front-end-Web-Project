@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import { useState } from "react";
-import { MenuItems } from "../data/MenuItems";
+import { MenuItems } from "../data/data";
 import SearchForm from "./SearchForm";
 
 const Navbar = () => {

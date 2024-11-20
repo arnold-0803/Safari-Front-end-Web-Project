@@ -1,5 +1,4 @@
 import Footer from "../components/Foofer";
-import Reuseable from "../components/MainFrame";
 import Navbar from "../components/Navbar";
 import RecentTrips from "../components/RecentTrips";
 import image from "../images/image.png";
@@ -7,6 +6,7 @@ import image1 from "../images/6.avif";
 import image2 from "../images/6.jpeg";
 import image3 from "../images/7.jpeg";
 import { useEffect } from "react";
+import MainFrame from "../components/MainFrame";
 
 const Service = ({scrollToTop}) => {
 
@@ -17,7 +17,7 @@ const Service = ({scrollToTop}) => {
   return (
     <div className="service">
       <Navbar/>
-      <Reuseable 
+      <MainFrame 
         cName="sub-hero"
         heroImage={image}
         title=" Our Service"

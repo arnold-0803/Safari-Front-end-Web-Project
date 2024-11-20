@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import AboutContent from "../components/AboutContent";
 import Footer from "../components/Foofer";
-import Reuseable from "../components/MainFrame";
 import Navbar from "../components/Navbar";
 import image from "../images/tour.avif";
+import MainFrame from "../components/MainFrame";
 
 const About = ({scrollToTop}) => {
 
@@ -17,7 +17,7 @@ const About = ({scrollToTop}) => {
         <Navbar/>
       </div>
       <div>
-        <Reuseable 
+        <MainFrame 
           cName="sub-hero"
           heroImage={image}
           title="About Us"

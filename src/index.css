@@ -43,3 +43,38 @@
   transition: 0.3s ease-in-out;
   @apply left-0 opacity-[1] z-[-1] px-[5px];
 }
+
+.hero-text h1{
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text .show{
+  @apply bg-[#fff] p-[1rem_2rem] rounded-[6px] text-[1.1rem] font-bold
+  tracking-[2px] text-[#222] hover:bg-[#01959a] hover:text-[#fff];
+}
+
+.sub-hero{
+  @apply relative w-full h-[80vh];
+}
+
+.destination-one{
+  @apply flex items-center justify-between pt-[40px] max-[850px]:flex
+  max-[850px]:flex-col-reverse;
+}
+
+.destination-one-reverse{
+  @apply flex flex-row-reverse justify-between pt-[40px] max-[850px]:flex
+  max-[850px]:flex-col-reverse;
+}
+
+.image img:nth-child(2){
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+
+.t-image img{
+  transition: 0.3s ease-in-out;
+}

@@ -1,4 +1,3 @@
-import "./PopularPlacesStyles.css";
 import Place from "./Place";
 
 const PopularPlaces = ({PopularPlaceData}) => {
