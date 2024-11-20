@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Foofer";
-import Reuseable from "../components/MainFrame";
 import Navbar from "../components/Navbar";
 import image from "../images/photo.avif";
+import MainFrame from "../components/MainFrame";
 
 const Contact = ({scrollToTop}) => {
 
@@ -14,7 +14,7 @@ const Contact = ({scrollToTop}) => {
   return (
     <div className="contact">
       <Navbar/>
-      <Reuseable 
+      <MainFrame 
         cName="sub-hero"
         heroImage={image}
         title="Contact Us"

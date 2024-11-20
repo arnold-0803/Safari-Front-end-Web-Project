@@ -1,7 +1,6 @@
 import TripCard from "./TripCard";
-import "./TripStyles.css";
 
-const RecentTrips = (props) => {
+const RecentTrips = ({recentTripData}) => {
   return (
     <div className="segment">
       <h1 className="heading">
@@ -11,25 +10,13 @@ const RecentTrips = (props) => {
         You can discover unique destinations
         using Google Maps.
       </p>
-      <div className="trip-card">
-        <TripCard
-          image={props.image1}
-          heading={props.heading1}
-          text={props.description1}
-        />
-
-        <TripCard
-          image={props.image2}
-          heading={props.heading2}
-          text={props.description2}
-        />
-
-        <TripCard
-          image={props.image3}
-          heading={props.heading3}
-          text={props.description3}
-        />
-      </div>
+      <ul className="trip-card p-[3rem_0] grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-[1rem]">
+        {recentTripData.length > 0 && recentTripData.map(trip => (
+          <li key={trip.id}>
+            <TripCard tripData={trip}/>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
