@@ -41,7 +41,7 @@
 
 .nav-menu.active{
   transition: 0.3s ease-in-out;
-  @apply left-0 opacity-[1] z-[-1] px-[5px];
+  @apply bg-[#fff] left-0 opacity-[1] z-[-1] px-[5px];
 }
 
 .hero-text h1{
@@ -77,4 +77,29 @@
 
 .t-image img{
   transition: 0.3s ease-in-out;
+}
+
+.contact-form button{
+  color: #fff;
+  transition: 0.4s ease-in-out;
+}
+
+.contact-form button::after{
+  content: "";
+  transition: 0.4s ease-in-out;
+  @apply absolute top-0 left-0 w-full h-full bg-[#01959a] z-[-1] text-[#fff];
+}
+
+.contact-form button:hover:after{
+  transform-origin: right;
+  left: 100%;
+  @apply bg-[#01959a];
+}
+
+.contact-form button:hover{
+  color: #01959a;
+}
+
+.contact-form a{
+  transition: 0.4s ease-in-out;
 }
