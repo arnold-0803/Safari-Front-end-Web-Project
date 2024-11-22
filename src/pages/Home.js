@@ -26,7 +26,7 @@ const Home = ({scrollToTop}) => {
         btnClass="show"
       />
       <PopularPlaces PopularPlaceData={poularPlaceData}/>
-      <Destinations tripData={recentTripData}/>
+      <Destinations destinationData={recentTripData}/>
       <Footer/>
     </div>
   );
