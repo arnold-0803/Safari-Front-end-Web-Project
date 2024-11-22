@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const TripCard = ({tripData}) => {
+const DestinationCard = ({tripData}) => {
   return (
     <div className="t-card text-start shadow-[0_5px_25px_2px_rgba(0,0,0,0.11)] 
       rounded-[7px] overflow-hidden">
@@ -25,4 +25,4 @@ const TripCard = ({tripData}) => {
   );
 }
  
-export default TripCard;
+export default DestinationCard;

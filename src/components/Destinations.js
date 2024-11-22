@@ -1,6 +1,6 @@
-import TripCard from "./TripCard";
+import DestinationCard from "./DestinationCard";
 
-const RecentTrips = ({recentTripData}) => {
+const Destinations = ({destinationData}) => {
   return (
     <div className="segment">
       <h1 className="heading">
@@ -11,9 +11,9 @@ const RecentTrips = ({recentTripData}) => {
         using Google Maps.
       </p>
       <ul className="trip-card p-[3rem_0] grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-[1rem]">
-        {recentTripData.length > 0 && recentTripData.map(trip => (
+        {destinationData.length > 0 && destinationData.map(trip => (
           <li key={trip.id}>
-            <TripCard tripData={trip}/>
+            <DestinationCard tripData={trip}/>
           </li>
         ))}
       </ul>
@@ -21,4 +21,4 @@ const RecentTrips = ({recentTripData}) => {
   );
 }
  
-export default RecentTrips;
+export default Destinations;
