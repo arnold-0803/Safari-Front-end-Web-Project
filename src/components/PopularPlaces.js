@@ -2,7 +2,7 @@ import Place from "./Place";
 
 const PopularPlaces = ({PopularPlaceData}) => {
   return (
-    <div className="segment">
+    <div className="segment bg-[whitesmoke]">
       <h1 className="heading">
         Popular Places in Kenya
       </h1>
