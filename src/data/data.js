@@ -9,6 +9,13 @@ import image1 from "../images/4.avif";
 import image2 from "../images/5.avif";
 import image3 from "../images/5.jpeg";
 
+// DESTINATION IMAGES
+import photo1 from "../images/6.avif";
+import photo2 from "../images/6.jpeg";
+import photo3 from "../images/7.jpeg";
+
+
+
 // NAVBAR MENU DATA
 export const MenuItems =[
   {
@@ -83,5 +90,28 @@ export const recentTripData = [
     image: image3,
     heading: "Trip to Aberdare",
     description: "Aberdare National Park, located in central Kenya, is a stunning and diverse protected area that encompasses a range of habitats, from dense forests to open moorland. Aberdare National Park is situated in the Aberdare Mountain Range, approximately 100 kilometers north of Nairobi, Kenya's capital city. It covers an area of about 767 square kilometers and is part of the larger Aberdare Conservation Area."
+  }
+]
+
+
+// DESTINATIONS DATA
+export const destinationsData = [
+  {
+    id: 0,
+    image: photo1,
+    heading: "Trip to Maasai Mara",
+    description: "The Maasai Mara National Reserve, often simply referred to as the Maasai Mara or Mara, is one of Kenya's most iconic and renowned wildlife conservation areas. It is situated in the southwestern part of Kenya, the Maasai Mara National Reserve shares a border with Tanzania's Serengeti National Park. It is part of the larger Mara-Serengeti ecosystem, which is renowned for its abundant wildlife and annual wildebeest migration."
+  },
+  {
+    id: 1,
+    image: photo2,
+    heading: "Trip to Lake Nakuru",
+    description: "Lake Nakuru National Park is situated approximately 160 kilometers northwest of Nairobi, Kenya's capital city. It covers an area of about 188 square kilometers , with Lake Nakuru being the centerpiece of the park. This National Park is a protected areain the Rift Valley Province of Kenya, famous for its stunning lake and diverse wildlife."
+  },
+  {
+    id: 2,
+    image: photo3,
+    heading: "Trip to Lake Naivasha",
+    description: "Lake Naivasha is situated approximately 90 kilometers northwest of Nairobi, Kenya's capital city. It is one of the largest freshwater lakes in the Great Rift Valley and covers an area of about 139 square kilometers. LakeNaivash is known for its scenic beauty, abundant birdlife, and diverse ecosystem."
   }
 ]
