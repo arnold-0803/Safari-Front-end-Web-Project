@@ -43,8 +43,8 @@ export const MenuItems =[
     icon: "fa-solid fa-address-book"
   },
   {
-    title: "Sign Up",
-    url: "/",
+    title: "Sign in",
+    url: "/sign-up",
     cName: "nav-link"
   }
 ];
