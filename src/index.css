@@ -65,6 +65,10 @@ nav .menubar i{
   clip-path: polygon(0% 100%, 100% 85%, 100% 0%, 0% 0%);
 }
 
+.home .hero h1{
+  @apply font-thin;
+}
+
 .hero-text .show{
   @apply bg-[#fff] p-[1rem_2rem] rounded-[6px] text-[1.1rem] font-bold
   tracking-[2px] text-[#222] hover:bg-[#01959a] hover:text-[#fff];
@@ -121,4 +125,8 @@ nav .menubar i{
 
 .contact-form a{
   transition: 0.4s ease-in-out;
+}
+
+.list-card ul li::before{
+  margin-left: 20px;
 }
