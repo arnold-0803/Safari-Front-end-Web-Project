@@ -7,7 +7,11 @@ function ValidationPage() {
       <div>
         <Navbar/>
       </div>
-      <h1>Sign Up</h1>
+      <div className='flex flex-col justify-center items-center'>
+        <h1 className='font-thin md:text-[4rem] max-[767px]:text-[2rem] text-[#01959a] mt-[150px]'>
+          Comming Soon...
+        </h1>
+      </div>
     </div>
   )
 }

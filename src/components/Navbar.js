@@ -42,7 +42,7 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <div>
+      <div className="px-[5px]">
         <SearchForm/>
       </div>
     </nav>

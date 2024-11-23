@@ -1,3 +1,5 @@
+import SubcribeButton from "./SubcribeButton";
+
 const MainFrame = (props) => {
   return (
     <div className={`${props.cName} relative w-full h-[100vh]`}>
@@ -12,9 +14,13 @@ const MainFrame = (props) => {
           max-[767px]:text-[1.2rem]">
           {props.text}
         </h4>
-        <a href={props.url} className={props.btnClass}>
-          {props.buttonText}
-        </a>
+        <div className="relative">
+          <button className={props.btnClass}
+            onClick={props.handleToggle}>
+            {props.buttonText}
+          </button>
+          {props.buttonText && props.toggle && <SubcribeButton/>}
+        </div>
       </div>
     </div>
   );
