@@ -14,6 +14,9 @@ const MainFrame = (props) => {
           max-[767px]:text-[1.2rem]">
           {props.text}
         </h4>
+        <p className="font-bold text-[#01959a] text-[1.3rem]">
+          {props.subText}
+        </p>
         <div className="relative w-[0] flex justify-center items-center"
           ref={props.containerRef}>
           <button className={props.btnClass}

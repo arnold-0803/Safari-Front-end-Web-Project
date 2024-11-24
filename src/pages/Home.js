@@ -50,6 +50,7 @@ const Home = ({scrollToTop}) => {
           heroImage={image}
           title="Monumental Tour Experience"
           text="Choose Your Favourite Destination"
+          subText="Subscribe for latest news"
           buttonText="subscribe"
           btnClass="show"
           handleToggle={handleToggle}

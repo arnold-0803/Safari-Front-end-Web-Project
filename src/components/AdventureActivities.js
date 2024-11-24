@@ -27,9 +27,9 @@ function AdventureActivities() {
       <h1 className='mb-[80px] md:text-[3rem] max-[767px]:text-[1.5rem] text-[#fff] font-thin'>
         Adventure Overview
       </h1>
-      <div className='bg-[#01959a] pb-[20px]'>
+      <div className='bg-[#01959a] pb-[20px] rounded-[30px]'>
         <ul className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] bg-[#01959a]
-          gap-[1.5rem] gap-y-[5rem] lg:px-[150px] max-[1024px]:px-[20px]'>
+          gap-[1.5rem] gap-y-[5rem] lg:px-[150px] max-[1024px]:px-[20px] rounded-[30px]'>
           {activitiesData.map(item => (
             <li className='list-card p-[15px] mt-[-50px] bg-[whitesmoke] rounded-[20px]' 
               key={item.id}>
