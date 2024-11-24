@@ -71,7 +71,7 @@ nav .menubar i{
 
 .hero-text .show{
   @apply bg-[#fff] p-[1rem_2rem] rounded-[6px] text-[1.1rem] font-bold
-  tracking-[2px] text-[#222] hover:bg-[#01959a] hover:text-[#fff];
+  tracking-[2px] text-[#01959a] hover:bg-[#01959a] hover:text-[#fff];
 }
 
 .sub-hero{
