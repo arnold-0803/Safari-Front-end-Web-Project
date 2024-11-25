@@ -69,6 +69,10 @@ nav .menubar i{
   @apply font-thin;
 }
 
+.service .sub-hero h1{
+  @apply text-[#01959ad3];
+}
+
 .hero-text .show{
   @apply bg-[#fff] p-[1rem_2rem] rounded-[6px] text-[1.1rem] font-bold
   tracking-[2px] text-[#01959a] hover:bg-[#01959a] hover:text-[#fff];
@@ -98,10 +102,6 @@ nav .menubar i{
   transition: 0.3s ease-in-out;
 }
 
-.service .sub-hero h1{
-  @apply text-[#01959ad3];
-}
-
 .contact-form button{
   color: #fff;
   transition: 0.4s ease-in-out;
@@ -129,4 +129,12 @@ nav .menubar i{
 
 .list-card ul li::before{
   margin-left: 20px;
+}
+
+.search .cards ul{
+  @apply flex flex-wrap justify-center items-start pt-[30px];
+}
+
+.search .cards ul li{
+  @apply w-[354px];
 }

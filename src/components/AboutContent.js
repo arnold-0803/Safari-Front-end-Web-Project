@@ -1,7 +1,7 @@
 const AboutContent = () => {
   return (
     <div className="about-content min-[780px]:grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-[1rem]
-      lg:p-[4rem_6rem] max-[1023px]:p-[4rem_15px]">
+      lg:p-[4rem_6rem] max-[1023px]:p-[1.5rem_15px_4px]">
       <div className="p-4">
         <h3 className="text-center pb-2 md:text-[1.5rem] max-[767px]:text-[1.3rem] font-light text-[#01959a]">
           Our History

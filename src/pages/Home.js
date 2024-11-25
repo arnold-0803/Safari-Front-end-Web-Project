@@ -63,7 +63,10 @@ const Home = ({scrollToTop}) => {
         <PopularPlaces PopularPlaceData={poularPlaceData}/>
       </div>
       <div>
-        <Destinations destinationData={recentTripData}/>
+        <Destinations 
+          heading="Recent Tours"
+          destinations={recentTripData}
+        />
       </div>
       <div>
         <AdventureActivities/>
