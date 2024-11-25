@@ -132,9 +132,10 @@ nav .menubar i{
 }
 
 .search .cards ul{
-  @apply flex flex-wrap justify-center items-start pt-[30px];
+  @apply grid grid-cols-[repeat(auto-fit,minmax(354px,max-content))] justify-center 
+  items-start pt-[30px] max-[875px]:grid-cols-[repeat(auto-fit,minmax(280px,max-content))];
 }
 
 .search .cards ul li{
-  @apply w-[354px];
+  @apply max-w-[354px] max-[875px]:max-w-[280px];
 }
