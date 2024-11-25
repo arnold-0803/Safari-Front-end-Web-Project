@@ -10,7 +10,7 @@ const DestinationCard = ({tripData}) => {
         />
       </div>
       <div className="px-4 pb-4">
-        <h4 className="font-thin text-[#01959a] max-[767px]:text-[1.6rem] md:text-[1.8rem]">
+        <h4 className="font-thin text-[#01959a] max-[767px]:text-[1.4rem] md:text-[1.6rem]">
           {tripData.heading}
         </h4>
         <p>

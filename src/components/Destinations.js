@@ -1,19 +1,20 @@
 import DestinationCard from "./DestinationCard";
 
-const Destinations = ({destinationData}) => {
+const Destinations = ({destinations, heading}) => {
   return (
     <div className="segment">
       <h1 className="heading">
-        Recent Trips
+        {heading}
       </h1>
       <p className="subtitle">
         You can discover unique destinations
         using Google Maps.
       </p>
-      <ul className="trip-card p-[3rem_0] grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-[1rem]">
-        {destinationData.length > 0 && destinationData.map(trip => (
-          <li key={trip.id}>
-            <DestinationCard tripData={trip}/>
+      <ul className="md:p-[3rem_60px] grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] 
+        gap-[1rem] gap-y-[2rem] max-[767px]:pb-[3rem]">
+        {destinations.length > 0 && destinations.map(destination => (
+          <li key={destination.id}>
+            <DestinationCard tripData={destination}/>
           </li>
         ))}
       </ul>
