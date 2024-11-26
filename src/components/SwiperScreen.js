@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 
 function SwiperScreen({
@@ -11,7 +12,7 @@ function SwiperScreen({
   customClassName,
   slidesPerView=1,
   spaceBetween=20,
-  breakPoints={},
+  breakpoints={},
   navigation,
   pagination,
   loop,
@@ -26,7 +27,7 @@ function SwiperScreen({
         className={customClassName}
         slidesPerView={slidesPerView}
         spaceBetween={spaceBetween}
-        breakPoints={breakPoints}
+        breakpoints={breakpoints}
         navigation={navigation}
         pagination={pagination ? {clickable:true} : false}
         loop={loop}
@@ -35,18 +36,27 @@ function SwiperScreen({
       >
         <ul>
           {destintions && (destintions.map(item => (
-            <li key={item.id}>
-              <SwiperSlide key={item.id}>
-                <div>
-                  <img src={item.image} alt={item.heading} />
-                </div>
-                <div>
-                  <h3>
-                    {item.heading}
-                  </h3>
-                </div>
-              </SwiperSlide>
-            </li>
+            <SwiperSlide className='swiper-slide'
+              key={item.id}
+            >
+              <div className='image-wrapper'>
+                <img className='w-full h-full'
+                  src={item.image} alt={item.heading}
+                />
+              </div>
+              <div className='content-wrapper'>
+                <Link className='block w-full h-full'
+                  to={"/"}>
+                <h3 className='text-[#fff] text-[1.5rem] font-extralight pt-[30px]'>
+                  {item.heading}
+                </h3>
+                <p className='flex justify-center items-center px-[10px]
+                  text-[#fff]'>
+                  {item.description.slice(0,100)}
+                </p>
+                </Link>
+              </div>
+            </SwiperSlide>
           )))}
         </ul>
       </Swiper>

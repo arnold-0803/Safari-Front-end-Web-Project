@@ -42,9 +42,12 @@ const Home = ({scrollToTop}) => {
     scrollToTop();
   }, [scrollToTop]);
 
-  const breakPoints = {
-    1024:{slidesPerView:3},
-  }
+  const breakpoints = {
+    0:{slidesPerView: 1},
+    640:{slidesPerView:2},
+    768:{slidesPerView:3},
+    1024:{slidesPerView:4}
+  };
 
   return (
     <div className="home">
@@ -78,14 +81,16 @@ const Home = ({scrollToTop}) => {
       <div>
         <AdventureActivities/>
       </div>
-      <div>
-        <h1>
+      <div className="trending-destiination">
+        <h1 className="heading">
           Top Trending Destinations
         </h1>
-        <SwiperScreen 
+        <SwiperScreen
+          customClassName="trending-swiper" 
           data={data}
+          slidesPerView={3}
           navigation={true}
-          breakPoints={breakPoints}
+          breakpoints={breakpoints}
         />
       </div>
       <div>

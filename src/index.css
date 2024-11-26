@@ -139,3 +139,41 @@ nav .menubar i{
 .search .cards ul li{
   @apply max-w-[354px] max-[875px]:max-w-[280px];
 }
+
+.trending-destiination .trending-swiper{
+  @apply p-[40px_20px];
+}
+
+.trending-swiper .swiper-slide{
+  @apply relative;
+}
+
+.trending-swiper .swiper-slide .image-wrapper{
+  @apply rounded-[15px] overflow-hidden w-full h-full;
+}
+
+.trending-swiper .swiper-slide .content-wrapper{
+  background: linear-gradient(rgba(1, 149, 154, 0.3), #01959ad5);
+  @apply absolute top-0 left-0 w-full h-full rounded-[15px];
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.trending-swiper .swiper-slide:hover .content-wrapper{
+  transform-origin: bottom;
+  @apply block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.trending-swiper .swiper-button-prev,
+.trending-swiper .swiper-button-next{
+  @apply text-[#fff] bg-[#01959a77] w-[40px] h-[40px] 
+  rounded-[50px];
+}
+
+.trending-swiper .swiper-button-prev::after,
+.trending-swiper .swiper-button-next::after{
+  @apply text-[1.5rem] font-medium;
+}
