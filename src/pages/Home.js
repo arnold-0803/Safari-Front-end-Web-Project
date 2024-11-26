@@ -7,11 +7,14 @@ import { poularPlaceData, recentTripData } from "../data/data";
 import MainFrame from "../components/MainFrame";
 import Destinations from "../components/Destinations";
 import AdventureActivities from "../components/AdventureActivities";
+import SwiperScreen from "../components/SwiperScreen";
+import useFetch from "../components/useFetch";
 
 const Home = ({scrollToTop}) => {
 
   const [toggle, setToggle] = useState(false);
   const containerRef = useRef(null);
+  const {data} = useFetch("db/db.json");
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -38,6 +41,10 @@ const Home = ({scrollToTop}) => {
   useEffect(() => {
     scrollToTop();
   }, [scrollToTop]);
+
+  const breakPoints = {
+    1024:{slidesPerView:3},
+  }
 
   return (
     <div className="home">
@@ -70,6 +77,16 @@ const Home = ({scrollToTop}) => {
       </div>
       <div>
         <AdventureActivities/>
+      </div>
+      <div>
+        <h1>
+          Top Trending Destinations
+        </h1>
+        <SwiperScreen 
+          data={data}
+          navigation={true}
+          breakPoints={breakPoints}
+        />
       </div>
       <div>
         <Footer/>
