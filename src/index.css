@@ -145,7 +145,7 @@ nav .menubar i{
 }
 
 .trending-swiper .swiper-slide{
-  @apply relative sm:h-[230px];
+  @apply relative h-[230px];
 }
 
 .trending-swiper .swiper-slide .image-wrapper{

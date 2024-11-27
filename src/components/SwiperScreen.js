@@ -52,7 +52,7 @@ function SwiperScreen({
                 </h3>
                 <p className='flex justify-center items-center px-[30px]
                   text-[#fff] text-start'>
-                  {item.description.slice(0,100)}...
+                  {item.description.slice(0,60)}...
                 </p>
                 <div className='absolute bottom-0 pb-[16px]'>
                   <p className='text-start text-[#fff] px-[30px] text-[1.2rem]'>
