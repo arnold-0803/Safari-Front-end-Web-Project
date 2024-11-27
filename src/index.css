@@ -145,7 +145,7 @@ nav .menubar i{
 }
 
 .trending-swiper .swiper-slide{
-  @apply relative;
+  @apply relative sm:h-[230px];
 }
 
 .trending-swiper .swiper-slide .image-wrapper{
@@ -153,18 +153,21 @@ nav .menubar i{
 }
 
 .trending-swiper .swiper-slide .content-wrapper{
-  background: linear-gradient(rgba(1, 149, 154, 0.3), #01959ad5);
+  /* background: linear-gradient(rgba(1, 149, 154, 0.3), #01959ad5); */
   @apply absolute top-0 left-0 w-full h-full rounded-[15px];
-  opacity: 0;
+  transition: 0.3s ease-in-out;
+  /* opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; */
 }
 
 .trending-swiper .swiper-slide:hover .content-wrapper{
-  transform-origin: bottom;
+  /* transform-origin: bottom;
   @apply block;
   opacity: 1;
-  visibility: visible;
+  visibility: visible; */
+  background: linear-gradient(rgba(1, 149, 154, 0.3), #01959ad5);
+  transform-origin: bottom;
 }
 
 .trending-swiper .swiper-button-prev,

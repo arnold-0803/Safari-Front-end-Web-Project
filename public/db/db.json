@@ -4,31 +4,41 @@
       "id": 0,
       "image": "/photos/6.avif",
       "heading": "Maasai Mara",
-      "description": "The Maasai Mara National Reserve, often simply referred to as the Maasai Mara or Mara, is one of Kenya's most iconic and renowned wildlife conservation areas. It is situated in the southwestern part of Kenya, the Maasai Mara National Reserve shares a border with Tanzania's Serengeti National Park. It is part of the larger Mara-Serengeti ecosystem, which is renowned for its abundant wildlife and annual wildebeest migration."
+      "description": "The Maasai Mara National Reserve, often simply referred to as the Maasai Mara or Mara, is one of Kenya's most iconic and renowned wildlife conservation areas. It is situated in the southwestern part of Kenya, the Maasai Mara National Reserve shares a border with Tanzania's Serengeti National Park. It is part of the larger Mara-Serengeti ecosystem, which is renowned for its abundant wildlife and annual wildebeest migration.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star"],
+      "location":"Kenya"
     },
     {
       "id": 1,
       "image": "/photos/6.jpeg",
       "heading": "Lake Nakuru",
-      "description": "Lake Nakuru National Park is situated approximately 160 kilometers northwest of Nairobi, Kenya's capital city. It covers an area of about 188 square kilometers , with Lake Nakuru being the centerpiece of the park. This National Park is a protected areain the Rift Valley Province of Kenya, famous for its stunning lake and diverse wildlife."
+      "description": "Lake Nakuru National Park is situated approximately 160 kilometers northwest of Nairobi, Kenya's capital city. It covers an area of about 188 square kilometers , with Lake Nakuru being the centerpiece of the park. This National Park is a protected areain the Rift Valley Province of Kenya, famous for its stunning lake and diverse wildlife.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya"
     },
     {
       "id": 2,
       "image": "/photos/7.jpeg",
       "heading": "Lake Naivasha",
-      "description": "Lake Naivasha is situated approximately 90 kilometers northwest of Nairobi, Kenya's capital city. It is one of the largest freshwater lakes in the Great Rift Valley and covers an area of about 139 square kilometers. LakeNaivash is known for its scenic beauty, abundant birdlife, and diverse ecosystem."
+      "description": "Lake Naivasha is situated approximately 90 kilometers northwest of Nairobi, Kenya's capital city. It is one of the largest freshwater lakes in the Great Rift Valley and covers an area of about 139 square kilometers. LakeNaivash is known for its scenic beauty, abundant birdlife, and diverse ecosystem.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star"],
+      "location":"Kenya"
     },
     {
       "id": 3,
       "image": "/photos/8.jpeg",
       "heading": "Nairobi National Park",
-      "description": "Lake Naivasha is situated approximately 90 kilometers northwest of Nairobi, Kenya's capital city. It is one of the largest freshwater lakes in the Great Rift Valley and covers an area of about 139 square kilometers. LakeNaivash is known for its scenic beauty, abundant birdlife, and diverse ecosystem."
+      "description": "Lake Naivasha is situated approximately 90 kilometers northwest of Nairobi, Kenya's capital city. It is one of the largest freshwater lakes in the Great Rift Valley and covers an area of about 139 square kilometers. LakeNaivash is known for its scenic beauty, abundant birdlife, and diverse ecosystem.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya"
     },
     {
       "id": 4,
       "image": "/photos/photo-1516426122078-c23e76319801.avif",
       "heading": "Samburu National reserve",
-      "description": "Lake Naivasha is situated approximately 90 kilometers northwest of Nairobi, Kenya's capital city. It is one of the largest freshwater lakes in the Great Rift Valley and covers an area of about 139 square kilometers. LakeNaivash is known for its scenic beauty, abundant birdlife, and diverse ecosystem."
+      "description": "Lake Naivasha is situated approximately 90 kilometers northwest of Nairobi, Kenya's capital city. It is one of the largest freshwater lakes in the Great Rift Valley and covers an area of about 139 square kilometers. LakeNaivash is known for its scenic beauty, abundant birdlife, and diverse ecosystem.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya"
     }
   ]
 }
