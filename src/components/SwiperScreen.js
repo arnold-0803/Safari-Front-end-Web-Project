@@ -46,13 +46,13 @@ function SwiperScreen({
               </div>
               <div className='content-wrapper'>
                 <Link className='block w-full h-full'
-                  to={"/"}>
+                  to={`/details/data1/${item.id}`}>
                 <h3 className='text-[#fff] text-[1.5rem] font-extralight pt-[15px]'>
                   {item.heading}
                 </h3>
                 <p className='flex justify-center items-center px-[30px]
                   text-[#fff] text-start'>
-                  {item.description.slice(0,100)}...
+                  {item.description.slice(0,60)}...
                 </p>
                 <div className='absolute bottom-0 pb-[16px]'>
                   <p className='text-start text-[#fff] px-[30px] text-[1.2rem]'>

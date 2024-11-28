@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import PopularPlaces from "../components/PopularPlaces";
 import image from "../images/premium_photo.avif";
 import { useEffect, useRef, useState } from "react";
-import { poularPlaceData, recentTripData } from "../data/data";
+import { recentTripData } from "../data/data";
 import MainFrame from "../components/MainFrame";
 import Destinations from "../components/Destinations";
 import AdventureActivities from "../components/AdventureActivities";
@@ -14,7 +14,8 @@ const Home = ({scrollToTop}) => {
 
   const [toggle, setToggle] = useState(false);
   const containerRef = useRef(null);
-  const {data} = useFetch("db/db.json");
+  const {data} = useFetch("/db/db.json");
+  const {data:data2} = useFetch("/db/db2.json");
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -70,7 +71,7 @@ const Home = ({scrollToTop}) => {
         />
       </div>
       <div>
-        <PopularPlaces PopularPlaceData={poularPlaceData}/>
+        <PopularPlaces PopularPlaceData={data2}/>
       </div>
       <div>
         <Destinations 

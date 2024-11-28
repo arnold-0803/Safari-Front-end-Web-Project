@@ -5,6 +5,7 @@ import Service from "./pages/Service";
 import Contact from "./pages/Contact";
 import ValidationPage from "./pages/ValidationPage";
 import SearchPage from "./pages/SearchPage";
+import DetailsPage from "./pages/DetailsPage";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contact" element={<Contact scrollToTop={scrollToTop}/>}/>
           <Route path="/sign-up" element={<ValidationPage scrollToTop={scrollToTop}/>}/>
           <Route path="/search" element={<SearchPage scrollToTop={scrollToTop}/>}/>
+          <Route path="/details/:source/:id" element={<DetailsPage scrollToTop={scrollToTop}/>}/>
         </Routes>
       </Router>
     </div>
