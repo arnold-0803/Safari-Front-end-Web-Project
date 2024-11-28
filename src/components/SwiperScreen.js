@@ -46,7 +46,7 @@ function SwiperScreen({
               </div>
               <div className='content-wrapper'>
                 <Link className='block w-full h-full'
-                  to={"/"}>
+                  to={`/details/data1/${item.id}`}>
                 <h3 className='text-[#fff] text-[1.5rem] font-extralight pt-[15px]'>
                   {item.heading}
                 </h3>

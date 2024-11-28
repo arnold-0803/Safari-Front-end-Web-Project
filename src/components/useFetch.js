@@ -33,7 +33,7 @@ export default function useFetch(url) {
     fetchData();
 
     return () => {
-      isMounted = false
+      isMounted = false;
     }
   }, [url]);
   return {data, loading, error}
