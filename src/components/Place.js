@@ -13,7 +13,7 @@ function Place({data}){
           </div>
           <div className="image relative w-[50%] flex max-[850px]:w-[100%] m-[1.8rem_0]">
             <img className="w-[49%] h-[350px] object-cover rounded-[6px] shadow-[1px_1px_62px_-18px_rgba(0,0,0,0.19)]"
-              src={data.image1} alt="" 
+              src={data.image} alt="" 
             />
             <img className="w-[49%] h-[350px] object-cover rounded-[6px] shadow-[1px_1px_62px_-18px_rgba(0,0,0,0.19)]"
               src={data.image2} alt="" 
@@ -26,7 +26,7 @@ function Place({data}){
         <div className="py-[15px] flex items-start">
           <Link className="bg-[#01959a] p-[8px_14px] text-[#fff] rounded-[30px]
             hover:bg-[#01959ac4]"
-            to={"/"}>
+            to={`/details/data2/${data.id}`}>
             Plan a trip
           </Link>
         </div>

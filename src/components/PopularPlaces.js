@@ -1,6 +1,9 @@
 import Place from "./Place";
 
 const PopularPlaces = ({PopularPlaceData}) => {
+  
+  const destiinations = PopularPlaceData.places;
+
   return (
     <div className="segment bg-[whitesmoke]">
       <h1 className="heading">
@@ -10,10 +13,10 @@ const PopularPlaces = ({PopularPlaceData}) => {
         Tour gives you the opportunity to explore destinations of your dream
       </p>
       <ul>
-        {PopularPlaceData.length > 0 && PopularPlaceData.map(data => (
-          <li key={data.id}>
+        {destiinations && destiinations.map(destiination => (
+          <li key={destiination.id}>
             <Place 
-              data={data}
+              data={destiination}
             />
           </li>
         ))}
