@@ -16,8 +16,11 @@ const Service = ({scrollToTop}) => {
     scrollToTop();
   }, [scrollToTop]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (loading) 
+    return <p className="text-[#01959a] mt-[20%] text-[2rem] font-thin">Loading...</p>;
+
+  if (error) 
+    return <p className="text-[#01959a] mt-[20%] text-[2rem] font-thin">Error: {error}</p>;
 
   return (
     <div className="service">
