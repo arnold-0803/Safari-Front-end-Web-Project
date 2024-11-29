@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home scrollToTop={scrollToTop}/>}/>
           <Route path="/about" element={<About scrollToTop={scrollToTop}/>}/>
-          <Route path="/service" element={<Service scrollToTop={scrollToTop}/>}/>
+          <Route path="/destinations" element={<Service scrollToTop={scrollToTop}/>}/>
           <Route path="/contact" element={<Contact scrollToTop={scrollToTop}/>}/>
           <Route path="/sign-up" element={<ValidationPage scrollToTop={scrollToTop}/>}/>
           <Route path="/search" element={<SearchPage scrollToTop={scrollToTop}/>}/>

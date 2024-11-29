@@ -6,7 +6,9 @@
       "heading": "Maasai Mara",
       "description": "The Maasai Mara National Reserve, often simply referred to as the Maasai Mara or Mara, is one of Kenya's most iconic and renowned wildlife conservation areas. It is situated in the southwestern part of Kenya, the Maasai Mara National Reserve shares a border with Tanzania's Serengeti National Park. It is part of the larger Mara-Serengeti ecosystem, which is renowned for its abundant wildlife and annual wildebeest migration.",
       "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star"],
-      "location":"Kenya"
+      "location":"Kenya",
+      "price": 45000,
+      "days": 10
     },
     {
       "id": 1,
@@ -14,7 +16,9 @@
       "heading": "Lake Nakuru",
       "description": "Lake Nakuru National Park is situated approximately 160 kilometers northwest of Nairobi, Kenya's capital city. It covers an area of about 188 square kilometers , with Lake Nakuru being the centerpiece of the park. This National Park is a protected areain the Rift Valley Province of Kenya, famous for its stunning lake and diverse wildlife.",
       "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
-      "location":"Kenya"
+      "location":"Kenya",
+      "price": 7000,
+      "days": 2
     },
     {
       "id": 2,
@@ -22,7 +26,9 @@
       "heading": "Lake Naivasha",
       "description": "Lake Naivasha is situated approximately 90 kilometers northwest of Nairobi, Kenya's capital city. It is one of the largest freshwater lakes in the Great Rift Valley and covers an area of about 139 square kilometers. LakeNaivash is known for its scenic beauty, abundant birdlife, and diverse ecosystem.",
       "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star"],
-      "location":"Kenya"
+      "location":"Kenya",
+      "price": 4000,
+      "days": 1
     },
     {
       "id": 3,
@@ -30,7 +36,9 @@
       "heading": "Nairobi National Park",
       "description": "Lake Naivasha is situated approximately 90 kilometers northwest of Nairobi, Kenya's capital city. It is one of the largest freshwater lakes in the Great Rift Valley and covers an area of about 139 square kilometers. LakeNaivash is known for its scenic beauty, abundant birdlife, and diverse ecosystem.",
       "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
-      "location":"Kenya"
+      "location":"Kenya",
+      "price": 39500,
+      "days": 8
     },
     {
       "id": 4,
@@ -38,7 +46,39 @@
       "heading": "Samburu National reserve",
       "description": "Lake Naivasha is situated approximately 90 kilometers northwest of Nairobi, Kenya's capital city. It is one of the largest freshwater lakes in the Great Rift Valley and covers an area of about 139 square kilometers. LakeNaivash is known for its scenic beauty, abundant birdlife, and diverse ecosystem.",
       "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
-      "location":"Kenya"
+      "location":"Kenya",
+      "price": 28000,
+      "days": 3
+    },
+    {
+      "id": 5,
+      "image": "/photos/4.avif",
+      "heading": "Trip to Amboseli",
+      "description": "Amboseli National Park is situated in the southern part of Kenya, near the border with Tanzania. Is one of Kenya's most iconic and picturesque protected areas, renowned for its stunning scenery, abundant wildlife, and breathtaking views of Mount Kilimanjaro, Africa's highest peak. Here's a brief description of Amboseli National Park.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya",
+      "price": 52000,
+      "days": 12
+    },
+    {
+      "id": 6,
+      "image": "/photos/5.avif",
+      "heading": "Trip to Mombasa",
+      "description": "Mombasa, a coastal city in Kenya, is renowned for its pristine beaches, turquoise waters, and vibrant coastal culture. Mombasa's beaches stretch along the shores of the Indian Ocean on the Kenyan coast. They are easily accessible from the city center and are a popular destination for both locals and tourists.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya",
+      "price": 50000,
+      "days": 10
+    },
+    {
+      "id": 7,
+      "image": "/photos/5.jpeg",
+      "heading": "Trip to Aberdare",
+      "description": "Aberdare National Park, located in central Kenya, is a stunning and diverse protected area that encompasses a range of habitats, from dense forests to open moorland. Aberdare National Park is situated in the Aberdare Mountain Range, approximately 100 kilometers north of Nairobi, Kenya's capital city. It covers an area of about 767 square kilometers and is part of the larger Aberdare Conservation Area.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya",
+      "price": 15000,
+      "days": 2
     }
   ]
 }

@@ -15,9 +15,9 @@ const DestinationCard = ({tripData}) => {
         </h4>
         <p>
           {tripData.description.slice(0, 130)}...
-          <Link className="font-medium text-[#01959a]"
-            to={"/"}>
-            Read More
+          <Link className="font-extrabold text-[#01959a]"
+            to={`/details/data1/${tripData.id}`}>
+            Book this trip
           </Link>
         </p>
       </div>

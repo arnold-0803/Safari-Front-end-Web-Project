@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 
 function SwiperScreen({
-  data,
+  destinations,
   customClassName,
   slidesPerView=1,
   spaceBetween=20,
@@ -18,9 +18,6 @@ function SwiperScreen({
   loop,
   autoplay,
 }) {
-
-  const destintions = data.places;
-
   return (
     <div>
       <Swiper
@@ -35,7 +32,7 @@ function SwiperScreen({
         modules={[Navigation, Pagination, Autoplay]}
       >
         <ul>
-          {destintions && (destintions.map(item => (
+          {destinations && (destinations.map(item => (
             <SwiperSlide className='swiper-slide'
               key={item.id}
             >
