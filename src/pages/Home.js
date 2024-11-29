@@ -73,7 +73,9 @@ const Home = ({scrollToTop}) => {
         />
       </div>
       <div>
-        <PopularPlaces destinations={data2.places}/>
+        <PopularPlaces 
+          destinations={data2.places}
+        />
       </div>
       <div>
         <Destinations 

@@ -16,6 +16,7 @@ function DetailsPage() {
         ...(data1.places || []).map(item => ({...item, source: "data1"})),
         ...(data2.places || []).map(item => ({...item, source: "data2"}))
       ];
+
       const item = allData.find(destination => destination.id === Number(id) && destination.source === source);
 
       setDetailsData(item);

@@ -30,4 +30,3 @@ export const MenuItems =[
     cName: "nav-link"
   }
 ];
-
