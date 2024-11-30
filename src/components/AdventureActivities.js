@@ -17,7 +17,7 @@ const activitiesData = [
     id: 2,
     icon: "fa-solid fa-compass",
     heading: "Tools & Equipments",
-    activities: ["Compass & Map", "Dance", "Hiking"]
+    activities: ["Compass & Map", "Essential Tools", "Camps"]
   }
 ];
 
