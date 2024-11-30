@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import BookingForm from '../components/BookingForm';
 import Footer from '../components/Foofer';
 
-function DetailsPage() {
+function DetailsPage({scrollToTop}) {
   
   const {id, source} = useParams();
   const { data:data1 } = useFetch("/db/db.json");
@@ -24,6 +24,11 @@ function DetailsPage() {
       setDetailsData(item);
     }
   }, [data1, data2, id, source]);
+
+
+  useEffect(() => {
+    scrollToTop();
+  }, [scrollToTop]);
 
   return (
     <div>
