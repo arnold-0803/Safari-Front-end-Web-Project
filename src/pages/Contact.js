@@ -13,14 +13,22 @@ const Contact = ({scrollToTop}) => {
 
   return (
     <div className="contact">
-      <Navbar/>
-      <MainFrame 
-        cName="sub-hero"
-        heroImage={image}
-        title="Contact Us"
-      />
-      <ContactForm/>
-      <Footer/>
+      <div>
+        <Navbar/>
+      </div>
+      <div>
+        <MainFrame 
+          cName="sub-hero"
+          heroImage={image}
+          title="Contact Us"
+        />
+      </div>
+      <div>
+        <ContactForm/>
+      </div>
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 }

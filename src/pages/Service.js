@@ -28,7 +28,7 @@ const Service = ({scrollToTop}) => {
       <MainFrame 
         cName="sub-hero"
         heroImage={image}
-        title=" Our Service"
+        title="Find A Destination"
       />
       <div>
         <Destinations 

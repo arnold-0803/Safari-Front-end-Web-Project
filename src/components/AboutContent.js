@@ -17,7 +17,7 @@ const AboutContent = () => {
         work excellence.</p>
       </div>
       <div className="min-[1274px]:border-l-[3px] min-[1274px]:border-r-[3px] border-gray-300
-        p-4">
+        p-4 max-[779px]:border-t-[3px] max-[779px]:border-b-[3px]">
         <h3 className="text-center pb-2 md:text-[1.5rem] max-[767px]:text-[1.3rem] font-light text-[#01959a]">
           Our Mission
         </h3>
@@ -26,7 +26,7 @@ const AboutContent = () => {
         of our clients, that too with ultimate transparency and 
         cost-effectiveness.</p>
       </div>
-      <div className="p-4">
+      <div className="p-4 max-[779px]:border-b-[3px]">
         <h3 className="text-center pb-2 md:text-[1.5rem] max-[767px]:text-[1.3rem] font-light text-[#01959a]">
           Our vision
         </h3>
