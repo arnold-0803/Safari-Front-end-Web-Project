@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import FavouriteButton from './FavouriteButton';
 
 function SearchForm() {
 
@@ -34,6 +35,7 @@ function SearchForm() {
           search
         </button>
       </form>
+      <FavouriteButton/>
     </div>
   )
 }

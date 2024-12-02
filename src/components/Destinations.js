@@ -1,6 +1,6 @@
 import DestinationCard from "./DestinationCard";
 
-const Destinations = ({destinations, heading}) => {
+const Destinations = ({destinations, heading, only}) => {
   return (
     <div className="segment">
       <h1 className="heading">
@@ -14,7 +14,10 @@ const Destinations = ({destinations, heading}) => {
         gap-[1rem] gap-y-[2rem] max-[767px]:pb-[3rem]">
         {destinations && destinations.map(destination => (
           <li key={destination.id}>
-            <DestinationCard tripData={destination}/>
+            <DestinationCard 
+              tripData={destination}
+              only={only}
+            />
           </li>
         ))}
       </ul>
