@@ -4,6 +4,7 @@ import useFetch from '../components/useFetch';
 import { useParams } from 'react-router-dom';
 import BookingForm from '../components/BookingForm';
 import Footer from '../components/Foofer';
+import { useFavourite } from '../context/favourite-context-provider';
 
 function DetailsPage({scrollToTop}) {
   
@@ -11,6 +12,7 @@ function DetailsPage({scrollToTop}) {
   const { data:data1 } = useFetch("/db/db.json");
   const {data:data2} = useFetch("/db/db2.json");
   const [detailsData, setDetailsData] = useState(null);
+  const {favouriteItems, addToFavourites, removeFromFavourites} = useFavourite();
 
   useEffect(() => {
     if(data1 && data2){
@@ -30,6 +32,16 @@ function DetailsPage({scrollToTop}) {
     scrollToTop();
   }, [scrollToTop]);
 
+  const isFavourite = detailsData ? favouriteItems.some(item => item.id === detailsData.id) : false;
+  const handleAddRemoveFavourite = (event) => {
+    event.preventDefault();
+    if(isFavourite){
+      removeFromFavourites(detailsData.id);
+    }else{
+      addToFavourites(detailsData);
+    }
+  }
+
   return (
     <div>
       <div>
@@ -44,9 +56,14 @@ function DetailsPage({scrollToTop}) {
             <div className='flex justify-center items-center border-[2px] p-[20px] gap-[2rem]
               max-[600px]:flex-col'>
               <div className="flex-1">
-                <img className='w-full rounded-[5px]'
-                  src={detailsData.image} alt={detailsData.heading}
-                />
+                <div className='relative'>
+                  <img className='w-full rounded-[5px]'
+                    src={detailsData.image} alt={detailsData.heading}
+                  />
+                  <i className={`fa-solid fa-heart absolute top-3 right-3 text-[1.4rem]
+                    cursor-pointer ${isFavourite ? "text-red-400" : "text-[#01959ad8]"}`}
+                    onClick={handleAddRemoveFavourite}></i>
+                </div>
                 <div className='text-start'>
                   <h3 className='md:text-[2.2rem] font-extralight text-[#01959a]'>
                     {detailsData.heading}

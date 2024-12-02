@@ -85,7 +85,7 @@ nav .menubar i{
 .destination-one{
   @apply flex items-center justify-between pt-[40px] max-[850px]:flex
   max-[850px]:flex-col-reverse;
-}
+}                                                                                                                           
 
 .destination-one-reverse{
   @apply flex flex-row-reverse justify-between pt-[40px] max-[850px]:flex
@@ -131,12 +131,14 @@ nav .menubar i{
   margin-left: 20px;
 }
 
-.search .cards ul{
+.search .cards ul,
+.favourite .cards ul{
   @apply grid grid-cols-[repeat(auto-fit,minmax(354px,max-content))] justify-center 
   items-start pt-[30px] max-[875px]:grid-cols-[repeat(auto-fit,minmax(280px,max-content))];
 }
 
-.search .cards ul li{
+.search .cards ul li,
+.favourite .cards ul li{
   @apply max-w-[354px] max-[875px]:max-w-[280px];
 }
 
