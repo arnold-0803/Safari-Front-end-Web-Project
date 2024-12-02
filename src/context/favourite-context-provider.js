@@ -24,21 +24,24 @@ function FavouriteProvider({children}) {
   }, []);
 
   const addToFavourites = (item) => {
-    const updateFavourites = [...favouriteItems, item];
+    const uniquePath = {...item, source: item.source};
+    const updateFavourites = [...favouriteItems, uniquePath];
     setFavoutiteItems(updateFavourites);
     localStorage.setItem("favourites", JSON.stringify(updateFavourites));
   }
 
-  const removeFromFavourites = (id) => {
-    const updateFavourites = favouriteItems.filter( item => item.id !== id);
+  const removeFromFavourites = (id, source) => {
+    const updateFavourites = favouriteItems.filter(
+      (item) => item.id !== id || item.source !== source
+    );
     setFavoutiteItems(updateFavourites);
     localStorage.setItem("favourites", JSON.stringify(updateFavourites));
-  }
+  };
 
   const values = {
     favouriteItems,
     addToFavourites,
-    removeFromFavourites
+    removeFromFavourites: (id, source) => removeFromFavourites(id, source)
   }
   return (
     <FavouriteContext.Provider value={values}>

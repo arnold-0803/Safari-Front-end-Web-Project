@@ -12,8 +12,8 @@ const Destinations = ({destinations, heading, only}) => {
       </p>
       <ul className="md:p-[3rem_60px] grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] 
         gap-[1rem] gap-y-[2rem] max-[767px]:pb-[3rem]">
-        {destinations && destinations.map(destination => (
-          <li key={destination.id}>
+        {destinations && destinations.map((destination, idx) => (
+          <li key={`${destination.id}-${idx}`}>
             <DestinationCard 
               tripData={destination}
               only={only}

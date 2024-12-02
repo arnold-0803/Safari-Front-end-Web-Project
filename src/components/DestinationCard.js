@@ -5,13 +5,15 @@ const DestinationCard = ({tripData, only}) => {
 
   const {favouriteItems, addToFavourites, removeFromFavourites} = useFavourite();
 
-  const isFavourite = tripData ? favouriteItems.some(item => item.id === tripData.id) : false;
+  const isFavourite = tripData ? favouriteItems.some(item => item.id === tripData.id && 
+    item.source === tripData.source) : false;
+
   const handleAddRemoveFavourite = (event) => {
     event.preventDefault();
     if(isFavourite){
-      removeFromFavourites(tripData.id);
+      removeFromFavourites(tripData.id, tripData.source);
     }else{
-      addToFavourites(tripData);
+      addToFavourites({...tripData, source: tripData.source});
     }
   }
 

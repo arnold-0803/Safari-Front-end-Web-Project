@@ -32,13 +32,15 @@ function DetailsPage({scrollToTop}) {
     scrollToTop();
   }, [scrollToTop]);
 
-  const isFavourite = detailsData ? favouriteItems.some(item => item.id === detailsData.id) : false;
+  const isFavourite = detailsData ? favouriteItems.some(item => item.id === detailsData.id && 
+    item.source === detailsData.source) : false;
+
   const handleAddRemoveFavourite = (event) => {
     event.preventDefault();
     if(isFavourite){
-      removeFromFavourites(detailsData.id);
+      removeFromFavourites(detailsData.id, detailsData.source);
     }else{
-      addToFavourites(detailsData);
+      addToFavourites({...detailsData, source: detailsData.source});
     }
   }
 
