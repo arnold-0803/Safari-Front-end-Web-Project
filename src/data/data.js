@@ -69,3 +69,39 @@ export const faqDatat = [
     answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit laudantium soluta non quis architecto velit reiciendis consequatur cum, iste, excepturi at repellat expedita accusamus, alias accusantium earum unde fugiat ea."
   }
 ]
+
+// COUNTUP DATA
+export const countUpData = [
+  {
+    id: 0,
+    start: 0,
+    end: 100,
+    heading: "ABCDEFGHIFKLMNOPQRSTUVWXYZ",
+    prefix: "fa-solid fa-map",
+    suffix: "+" 
+  },
+  {
+    id: 1,
+    start: 0,
+    end: 100,
+    heading: "ABCDEFGHIFKLMNOPQRSTUVWXYZ",
+    prefix: "fa-solid fa-earth",
+    suffix: "" 
+  },
+  {
+    id: 2,
+    start: 0,
+    end: 100,
+    heading: "ABCDEFGHIFKLMNOPQRSTUVWXYZ",
+    prefix: "fa-solid fa-people-group",
+    suffix: "+" 
+  },
+  {
+    id: 3,
+    start: 0,
+    end: 100,
+    heading: "ABCDEFGHIFKLMNOPQRSTUVWXYZ",
+    prefix: "fa-solid fa-road",
+    suffix: "Km" 
+  }
+];

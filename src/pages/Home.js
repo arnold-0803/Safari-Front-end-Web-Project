@@ -8,6 +8,8 @@ import Destinations from "../components/Destinations";
 import AdventureActivities from "../components/AdventureActivities";
 import SwiperScreen from "../components/SwiperScreen";
 import useFetch from "../components/useFetch";
+import CountUpBanner from "../components/CountUpBanner";
+import { countUpData } from "../data/data";
 
 const Home = ({scrollToTop}) => {
 
@@ -97,6 +99,9 @@ const Home = ({scrollToTop}) => {
           navigation={true}
           breakpoints={breakpoints}
         />
+      </div>
+      <div>
+        <CountUpBanner countUpData={countUpData}/>
       </div>
       <div>
         <Footer/>
