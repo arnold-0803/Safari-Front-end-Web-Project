@@ -174,3 +174,7 @@ nav .menubar i{
 .trending-swiper .swiper-button-next::after{
   @apply text-[1.5rem] font-medium;
 }
+
+.count-up-banner .heading{
+  @apply text-[#fff];
+}

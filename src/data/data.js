@@ -75,32 +75,32 @@ export const countUpData = [
   {
     id: 0,
     start: 0,
-    end: 100,
-    heading: "ABCDEFGHIFKLMNOPQRSTUVWXYZ",
+    end: 400,
+    heading: "Travels",
     prefix: "fa-solid fa-map",
     suffix: "+" 
   },
   {
     id: 1,
     start: 0,
-    end: 100,
-    heading: "ABCDEFGHIFKLMNOPQRSTUVWXYZ",
-    prefix: "fa-solid fa-earth",
+    end: 20,
+    heading: "Offices countrywide ",
+    prefix: "fa-solid fa-earth-africa",
     suffix: "" 
   },
   {
     id: 2,
     start: 0,
-    end: 100,
-    heading: "ABCDEFGHIFKLMNOPQRSTUVWXYZ",
+    end: 40000,
+    heading: "Clients Served",
     prefix: "fa-solid fa-people-group",
     suffix: "+" 
   },
   {
     id: 3,
     start: 0,
-    end: 100,
-    heading: "ABCDEFGHIFKLMNOPQRSTUVWXYZ",
+    end: 10000,
+    heading: "Tarmac",
     prefix: "fa-solid fa-road",
     suffix: "Km" 
   }

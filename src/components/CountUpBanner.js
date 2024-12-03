@@ -8,10 +8,10 @@ const Counter = ({data}) => {
 
   return (
     <div ref={ref}>
-      <i className={data.prefix}></i>
+      
       {inView && <CountUp
         start={0}
-        end={1000}
+        end={data.end}
         duration={3}
         suffix={data.suffix} 
       />}
@@ -23,21 +23,28 @@ const Counter = ({data}) => {
 
 function CountUpBanner({countUpData}) {
   return (
-    <div className='bg-[#01959aa6] lg:p-[20px_120px] sm:h-[60vh] max-[639px]:h-[100vh] 
-      relative'>
+    <div className='count-up-banner bg-[#01959aa6] xl:p-[20px_120px] sm:h-[40vh]
+      max-[639px]:h-[40vh] relative'>
       <div className='relative h-full'>
-        <img className='w-full h-full object-cover'
+        <img className='w-full h-full object-cover object-fit shadow-lg'
           src={banner} alt={banner}
         />
         <div className='absolute top-0 left-0 w-full h-full'>
           <h2 className='heading'>
             Milestone Achieved
           </h2>
-          <ul className='text-start flex flex-wrap justify-between items-center'>
+          <ul className='text-start flex flex-wrap justify-between items-center
+            h-full px-3 pb-[100px] gap-y-[20px]'>
             {countUpData.map(item => (
-              <li className='md:text-[2rem] font-bold text-[#fff]'
+              <li className='md:text-[2rem] max-[767px]:text-[1.5rem] font-light text-[#fff]'
                 key={item.id}>
-                <Counter data={item}/>
+                <div className='flex justify-center items-center gap-1'>
+                  <i className={item.prefix}></i>
+                  <Counter data={item}/>
+                </div>
+                <p className='md:text-[1.5rem] max-[767px]:text-[1.2rem] font-semibold'>
+                  {item.heading}
+                </p>
               </li>
             ))}
           </ul>
