@@ -43,27 +43,27 @@ function SwiperScreen({
               </div>
               <div className='content-wrapper'>
                 <Link className='block w-full h-full'
-                  to={`/details/data1/${item.id}`}>
-                <h3 className='text-[#fff] text-[1.5rem] font-extralight pt-[15px]'>
-                  {item.heading}
-                </h3>
-                <p className='flex justify-center items-center px-[30px]
-                  text-[#fff] text-start'>
-                  {item.description.slice(0,60)}...
-                </p>
-                <div className='absolute bottom-0 pb-[16px]'>
-                  <p className='text-start text-[#fff] px-[30px] text-[1.2rem]'>
-                    <i className='fa-solid fa-location-dot'></i>
-                    {item.location}
+                  to={`/details/data3/${item.id}`}>
+                  <h3 className='text-[#fff] text-[1.5rem] font-extralight pt-[15px]'>
+                    {item.heading}
+                  </h3>
+                  <p className='flex justify-center items-center px-[30px]
+                    text-[#fff] text-start'>
+                    {item.description.slice(0,60)}...
                   </p>
-                  <ul className='w-full flex text-yellow-300 px-[30px]'>
-                    {item.ratings.map((rating, idx) => (
-                      <li key={idx}>
-                        <i className={`${rating} inline-block`}></i>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  <div className='absolute bottom-0 pb-[16px]'>
+                    <p className='text-start text-[#fff] px-[30px] text-[1.2rem]'>
+                      <i className='fa-solid fa-location-dot'></i>
+                      {item.location}
+                    </p>
+                    <ul className='w-full flex text-yellow-300 px-[30px]'>
+                      {item.ratings.map((rating, idx) => (
+                        <li key={idx}>
+                          <i className={`${rating} inline-block`}></i>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>

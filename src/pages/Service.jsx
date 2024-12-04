@@ -2,13 +2,13 @@ import Footer from "../components/Foofer";
 import Navbar from "../components/Navbar";
 import image from "../images/image.png";
 import { useEffect } from "react";
-import MainFrame from "../components/MainFrame";
+import MainFrame from "../components/HeroFrame";
 import Destinations from "../components/Destinations";
 import useFetch from "../components/useFetch";
 
 const Service = ({scrollToTop}) => {
 
-  const {data, loading, error} = useFetch("/db/db.json");
+  const {data, loading, error} = useFetch("/db/db1.json");
 
   const destinations = data.places || [];
 

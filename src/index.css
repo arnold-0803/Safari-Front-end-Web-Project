@@ -170,6 +170,11 @@ nav .menubar i{
   rounded-[50px];
 }
 
+.trending-swiper .swiper-button-prev.swiper-button-disabled,
+.trending-swiper .swiper-button-next.swiper-button-disabled{
+  @apply pointer-events-auto;
+}
+
 .trending-swiper .swiper-button-prev::after,
 .trending-swiper .swiper-button-next::after{
   @apply text-[1.5rem] font-medium;

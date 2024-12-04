@@ -1,0 +1,84 @@
+{
+  "places": [
+    {
+      "id": 0,
+      "image": "/photos/Maasai Market Nairobi.jpeg",
+      "heading": "Maasai Market",
+      "description": "A vibrant open-air market showcasing traditional Maasai arts, crafts, jewelry, and souvenirs. It's a great spot for shopping and experiencing Kenyan culture.",
+      "ratings": ["fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya",
+      "price": 5000,
+      "days": 1
+    },
+    {
+      "id": 1,
+      "image": "/photos/ba18879c7d682ffd2021b34ed6639bba.jpg",
+      "heading": "Nairobi City",
+      "description": "Kenya's capital and a bustling urban hub blending modern skyscrapers with cultural and historical landmarks, including national parks and museums.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya",
+      "price": 80000,
+      "days": 2
+    },
+    {
+      "id": 2,
+      "image": "/photos/42cf03aa83b34e40a8f0c91430638d72.jpg",
+      "heading": "Giraffe Center",
+      "description": "A conservation center dedicated to the endangered Rothschild giraffe. Visitors can interact with and feed giraffes in a safe environment.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star"],
+      "location":"Kenya",
+      "price": 20000,
+      "days": 1
+    },
+    {
+      "id": 3,
+      "image": "/photos/Dreaming of the perfect summer escape_ 🌞 Discover the best Eastern African coastal getaways that offer luxury, adventure, and breathtaking views! From Zanzibar's serene beaches to the tranquil shores of Diani Beach, we've got your ultim.jpeg",
+      "heading": "Diani Beaches",
+      "description": "Located on Kenya's southern coast, these pristine white-sand beaches are renowned for their turquoise waters, coral reefs, and luxury resorts.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya",
+      "price": 65000,
+      "days": 4
+    },
+    {
+      "id": 4,
+      "image": "/photos/Nairobi Safari Walk.jpeg",
+      "heading": "Nairobi Safari Walk",
+      "description": "A nature trail offering a close-up experience of Kenya's wildlife, including lions, cheetahs, and rhinos, in a simulated natural environment.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya",
+      "price": 28000,
+      "days": 2
+    },
+    {
+      "id": 5,
+      "image": "/photos/Tsavo in Kenia.jpeg",
+      "heading": "Tsavo National Park",
+      "description": "One of Kenya's largest national parks, famous for its diverse wildlife, dramatic landscapes, and iconic red elephants.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya",
+      "price": 52000,
+      "days": 3
+    },
+    {
+      "id": 6,
+      "image": "/photos/malindi.jpg",
+      "heading": "Vasco da Gama's Pilar",
+      "description": "A historical landmark built by Portuguese explorer Vasco da Gama in 1498, marking Malindi as an important stop in his voyages.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star-half"],
+      "location":"Kenya",
+      "price": 50000,
+      "days": 5
+    },
+    {
+      "id": 7,
+      "image": "/photos/Nairobi National Museum, Nairobi _ Tickets & Tours - 2025.jpeg",
+      "heading": "Nairobi National Museum",
+      "description": "A cultural and historical museum displaying Kenya's rich heritage, including exhibits on anthropology, paleontology, and local art.",
+      "ratings": ["fa-solid fa-star","fa-solid fa-star", "fa-solid fa-star", "fa-solid fa-star"],
+      "location":"Kenya",
+      "price": 15000,
+      "days": 2
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import PopularPlaces from "../components/PopularPlaces";
 import image from "../images/premium_photo.avif";
 import { useEffect, useRef, useState } from "react";
-import MainFrame from "../components/MainFrame";
+import MainFrame from "../components/HeroFrame";
 import Destinations from "../components/Destinations";
 import AdventureActivities from "../components/AdventureActivities";
 import SwiperScreen from "../components/SwiperScreen";
@@ -15,8 +15,9 @@ const Home = ({scrollToTop}) => {
 
   const [toggle, setToggle] = useState(false);
   const containerRef = useRef(null);
-  const {data:data1} = useFetch("/db/db.json");
+  const {data:data1} = useFetch("/db/db1.json");
   const {data:data2} = useFetch("/db/db2.json");
+  const {data:data3} = useFetch("/db/db3.json");
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -94,7 +95,7 @@ const Home = ({scrollToTop}) => {
         </h1>
         <SwiperScreen
           customClassName="trending-swiper" 
-          destinations={data1.places}
+          destinations={data3.places}
           slidesPerView={3}
           navigation={true}
           breakpoints={breakpoints}

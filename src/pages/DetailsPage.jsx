@@ -9,23 +9,25 @@ import { useFavourite } from '../context/favourite-context-provider';
 function DetailsPage({scrollToTop}) {
   
   const {id, source} = useParams();
-  const { data:data1 } = useFetch("/db/db.json");
+  const { data:data1 } = useFetch("/db/db1.json");
   const {data:data2} = useFetch("/db/db2.json");
+  const {data:data3} = useFetch("/db/db3.json");
   const [detailsData, setDetailsData] = useState(null);
   const {favouriteItems, addToFavourites, removeFromFavourites} = useFavourite();
 
   useEffect(() => {
-    if(data1 && data2){
+    if(data1 && data2 && data3){
       const allData = [
         ...(data1.places || []).map(item => ({...item, source: "data1"})),
-        ...(data2.places || []).map(item => ({...item, source: "data2"}))
+        ...(data2.places || []).map(item => ({...item, source: "data2"})),
+        ...(data3.places || []).map(item => ({...item, source: "data3"}))
       ];
 
       const item = allData.find(destination => destination.id === Number(id) && destination.source === source);
 
       setDetailsData(item);
     }
-  }, [data1, data2, id, source]);
+  }, [data1, data2, data3, id, source]);
 
 
   useEffect(() => {

@@ -3,7 +3,7 @@ import AboutContent from "../components/AboutContent";
 import Footer from "../components/Foofer";
 import Navbar from "../components/Navbar";
 import image from "../images/tour.avif";
-import MainFrame from "../components/MainFrame";
+import MainFrame from "../components/HeroFrame";
 import { faqDatat } from "../data/data";
 
 const About = ({scrollToTop}) => {

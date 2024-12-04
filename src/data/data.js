@@ -85,7 +85,7 @@ export const countUpData = [
     start: 0,
     end: 20,
     heading: "Offices countrywide ",
-    prefix: "fa-solid fa-map",
+    prefix: "fa-solid fa-map-location-dot",
     suffix: "" 
   },
   {
