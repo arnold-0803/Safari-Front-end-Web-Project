@@ -62,7 +62,7 @@ nav .menubar i{
 
 
 .home .hero img{
-  clip-path: polygon(0% 100%, 100% 85%, 100% 0%, 0% 0%);
+  clip-path: polygon(0% 100%, 100% 82%, 100% 0%, 0% 0%);
   @apply max-[767px]:h-[55vh];
 }
 
@@ -81,6 +81,14 @@ nav .menubar i{
 
 .sub-hero{
   @apply relative w-full px-[10px];
+}
+
+.sub-hero .hero-content{
+  @apply xl:h-[90vh];
+}
+
+.sub-hero .hero-text{
+  @apply text-center h-full
 }
 
 .destination-one{
