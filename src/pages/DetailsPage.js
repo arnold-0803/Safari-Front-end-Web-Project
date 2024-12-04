@@ -63,7 +63,7 @@ function DetailsPage({scrollToTop}) {
                     src={detailsData.image} alt={detailsData.heading}
                   />
                   <i className={`fa-solid fa-heart absolute top-3 right-3 text-[1.4rem]
-                    cursor-pointer ${isFavourite ? "text-red-400" : "text-[#01959ad8]"}`}
+                    cursor-pointer ${isFavourite ? "text-red-400" : "text-[#fff]"}`}
                     onClick={handleAddRemoveFavourite}></i>
                 </div>
                 <div className='text-start'>

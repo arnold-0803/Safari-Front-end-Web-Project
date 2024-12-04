@@ -77,7 +77,7 @@ export const countUpData = [
     start: 0,
     end: 400,
     heading: "Travels",
-    prefix: "fa-solid fa-map",
+    prefix: "fa-solid fa-van-shuttle",
     suffix: "+" 
   },
   {
@@ -85,7 +85,7 @@ export const countUpData = [
     start: 0,
     end: 20,
     heading: "Offices countrywide ",
-    prefix: "fa-solid fa-earth-africa",
+    prefix: "fa-solid fa-map",
     suffix: "" 
   },
   {
@@ -100,7 +100,7 @@ export const countUpData = [
     id: 3,
     start: 0,
     end: 10000,
-    heading: "Tarmac",
+    heading: "Road Covered",
     prefix: "fa-solid fa-road",
     suffix: "Km" 
   }
