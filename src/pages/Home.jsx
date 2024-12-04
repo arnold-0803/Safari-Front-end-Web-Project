@@ -68,7 +68,7 @@ const Home = ({scrollToTop}) => {
           text="Choose Your Favourite Destination"
           subText="Subscribe for latest news"
           buttonText="subscribe"
-          btnClass="show"
+          btnClass="button"
           handleToggle={handleToggle}
           toggle={toggle}
           setToggle={setToggle}

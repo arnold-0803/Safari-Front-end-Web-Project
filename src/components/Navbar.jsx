@@ -21,7 +21,7 @@ const Navbar = () => {
             Safari
           </NavLink>
         </h1>
-        <div className="menubar md:hidden text-[1.5rem] text-[#01959a] bg-[#fff]
+        <div className="menubar min-[850px]:hidden text-[1.5rem] text-[#01959a] bg-[#fff]
           pr-[15px]" 
           onClick={handleToggle}
         >
