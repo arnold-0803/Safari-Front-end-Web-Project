@@ -25,11 +25,13 @@ const Service = ({scrollToTop}) => {
   return (
     <div className="service">
       <Navbar/>
-      <MainFrame 
-        cName="sub-hero"
-        heroImage={image}
-        title="Find A Destination"
-      />
+      <div>
+        <MainFrame 
+          cName="sub-hero"
+          heroImage={image}
+          title="Find A Destination"
+        />
+      </div>
       <div>
         <Destinations 
           heading="Destinations in Kenya"
