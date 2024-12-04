@@ -3,7 +3,7 @@ import SubcribeForm from "./SubcribeForm";
 const MainFrame = (props) => {
   return (
     <div className={`${props.cName} relative w-full pt-[100px]`}>
-      <div className="relative">
+      <div className="hero-content relative">
         <img className="w-full h-full object-cover object-fill max-[767px]:h-[40vh]"
           src={props.heroImage} alt={props.title}
         />

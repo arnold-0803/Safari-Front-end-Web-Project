@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 import Destinations from '../components/Destinations';
 
 function SearchPage() {
-const {data, loading, error} = useFetch("/db/db.json");
+const {data, loading, error} = useFetch("/db/db1.json");
   const location = useLocation();
   const query = new URLSearchParams(location.search).get("query") || "";
 
