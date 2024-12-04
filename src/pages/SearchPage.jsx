@@ -35,7 +35,7 @@ const {data, loading, error} = useFetch("/db/db1.json");
             Searched Destination(s)
           </h2>
           <p className='text-[1.3rem] text-[#01959a]'>
-            ({filteredDestinations.length})
+            ({filteredDestinations.length}) found
           </p>
         <div>
           {filteredDestinations.length > 0 ? (
