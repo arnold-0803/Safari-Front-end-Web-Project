@@ -9,7 +9,8 @@ import AdventureActivities from "../components/AdventureActivities";
 import SwiperScreen from "../components/SwiperScreen";
 import useFetch from "../components/useFetch";
 import CountUpBanner from "../components/CountUpBanner";
-import { countUpData } from "../data/data";
+import { countUpData, reviewsData } from "../data/data";
+import ClientsReviews from "../components/ClientsReviews";
 
 const Home = ({scrollToTop}) => {
 
@@ -103,6 +104,9 @@ const Home = ({scrollToTop}) => {
       </div>
       <div>
         <CountUpBanner countUpData={countUpData}/>
+      </div>
+      <div>
+        <ClientsReviews reviewsData={reviewsData}/>
       </div>
       <div>
         <Footer/>

@@ -1,3 +1,11 @@
+// REVIEWS PHOTOS
+import img1 from "../photos/_ (1).jpeg";
+import img2 from "../photos/_ (2).jpeg";
+import img3 from "../photos/Ícone de perfil de usuário em estilo plano ilustração em vetor avatar membro em fundo isolado conceito de negócio de sinal de permissão humana _ Vetor Premium.jpeg";
+import img4 from "../photos/25 Testimonial Questions to Ask Your Customers.jpeg";
+import img5 from "../photos/Jaune Jeyeux - Issuu.jpeg";
+
+
 // NAVBAR MENU DATA
 export const MenuItems =[
   {
@@ -103,5 +111,40 @@ export const countUpData = [
     heading: "Road Covered",
     prefix: "fa-solid fa-road",
     suffix: "Km" 
+  }
+];
+
+
+// REVIEWS DATA
+export const reviewsData = [
+  {
+    id: 0,
+    image: img1,
+    name: "Person1",
+    testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quis error deleniti commodi ab voluptas sunt minima, expedita, sit ratione reiciendis fuga minus dolores dignissimos impedit nulla distinctio fugit exercitationem."
+  },
+  {
+    id: 1,
+    image: img2,
+    name: "Person2",
+    testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quis error deleniti commodi ab voluptas sunt minima, expedita, sit ratione reiciendis fuga minus dolores dignissimos impedit nulla distinctio fugit exercitationem."
+  },
+  {
+    id: 2,
+    image: img3,
+    name: "Person3",
+    testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quis error deleniti commodi ab voluptas sunt minima, expedita, sit ratione reiciendis fuga minus dolores dignissimos impedit nulla distinctio fugit exercitationem."
+  },
+  {
+    id: 3,
+    image: img4,
+    name: "Person4",
+    testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quis error deleniti commodi ab voluptas sunt minima, expedita, sit ratione reiciendis fuga minus dolores dignissimos impedit nulla distinctio fugit exercitationem."
+  },
+  {
+    id: 4,
+    image: img5,
+    name: "Person5",
+    testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quis error deleniti commodi ab voluptas sunt minima, expedita, sit ratione reiciendis fuga minus dolores dignissimos impedit nulla distinctio fugit exercitationem."
   }
 ];
