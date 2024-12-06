@@ -20,7 +20,7 @@ const HeroFrame = (props) => {
             <p className="font-semibold text-[#01959a] text-[1.3rem] cursor-pointer"
               onClick={props.handleToggle}>
               {props.subText}
-              <span className="text-gray-700 font-bold hover:underline ml-1">
+              <span className="text-[#01959a] font-black hover:underline ml-1">
                 {props.buttonText}
               </span>
             </p>
