@@ -1,6 +1,6 @@
 import SubcribeForm from "./SubcribeForm";
 
-const MainFrame = (props) => {
+const HeroFrame = (props) => {
   return (
     <div className={`${props.cName} relative w-full pt-[100px]`}>
       <div className="hero-content relative">
@@ -15,15 +15,15 @@ const MainFrame = (props) => {
             max-[767px]:text-[1.2rem]">
             {props.text}
           </h4>
-          <p className="font-bold text-[#01959a] text-[1.3rem]">
-            {props.subText}
-          </p>
-          <div className="relative w-[0] flex justify-center items-center"
+          <div className="relative flex justify-center items-center"
             ref={props.containerRef}>
-            <button className={props.btnClass}
+            <p className="font-semibold text-[#01959a] text-[1.3rem] cursor-pointer"
               onClick={props.handleToggle}>
-              {props.buttonText}
-            </button>
+              {props.subText}
+              <span className="text-gray-700 font-bold hover:underline ml-1">
+                {props.buttonText}
+              </span>
+            </p>
             {props.buttonText && props.toggle && (
               <SubcribeForm/>
             )}
@@ -34,4 +34,4 @@ const MainFrame = (props) => {
   );
 }
  
-export default MainFrame;
+export default HeroFrame;

@@ -12,10 +12,12 @@ function Place({data}){
             <p>{data.description}</p>
           </div>
           <div className="image relative w-[50%] flex max-[850px]:w-[100%] m-[1.8rem_0]">
-            <img className="w-[49%] h-[350px] object-cover rounded-[6px] shadow-[1px_1px_62px_-18px_rgba(0,0,0,0.19)]"
+            <img className="w-[49%] sm:h-[350px] object-cover rounded-[6px] shadow-[1px_1px_62px_-18px_rgba(0,0,0,0.19)]
+              max-[640px]:h-[200px]"
               src={data.image} alt="" 
             />
-            <img className="w-[49%] h-[350px] object-cover rounded-[6px] shadow-[1px_1px_62px_-18px_rgba(0,0,0,0.19)]"
+            <img className="w-[49%] sm:h-[350px] object-cover rounded-[6px] shadow-[1px_1px_62px_-18px_rgba(0,0,0,0.19)]
+              max-[640px]:h-[200px]"
               src={data.image2} alt="" 
             />
           </div>

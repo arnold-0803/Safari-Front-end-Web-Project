@@ -3,8 +3,8 @@ import AboutContent from "../components/AboutContent";
 import Footer from "../components/Foofer";
 import Navbar from "../components/Navbar";
 import image from "../images/tour.avif";
-import MainFrame from "../components/HeroFrame";
 import { faqDatat } from "../data/data";
+import HeroFrame from "../components/HeroFrame";
 
 const About = ({scrollToTop}) => {
 
@@ -24,7 +24,7 @@ const About = ({scrollToTop}) => {
         <Navbar/>
       </div>
       <div>
-        <MainFrame 
+        <HeroFrame 
           cName="sub-hero"
           heroImage={image}
           title="About Us"

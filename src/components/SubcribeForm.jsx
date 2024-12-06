@@ -3,7 +3,7 @@ import React from 'react'
 function SubcribeForm() {
 
   return (
-    <div className='absolute top-[100.1%] left-[50%] translate-x-[-50%] pt-[10px]
+    <div className='absolute top-[80%] left-[50%] translate-x-[-50%] pt-[10px]
      flex justify-center items-center'>
       <form className='flex bg-[#01959a] p-[15px] 
         rounded-[15px] text-[#01959a]'>
