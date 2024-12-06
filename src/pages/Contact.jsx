@@ -3,7 +3,7 @@ import ContactForm from "../components/ContactForm";
 import Footer from "../components/Foofer";
 import Navbar from "../components/Navbar";
 import image from "../images/photo.avif";
-import MainFrame from "../components/HeroFrame";
+import HeroFrame from "../components/HeroFrame";
 
 const Contact = ({scrollToTop}) => {
 
@@ -17,7 +17,7 @@ const Contact = ({scrollToTop}) => {
         <Navbar/>
       </div>
       <div>
-        <MainFrame 
+        <HeroFrame 
           cName="sub-hero"
           heroImage={image}
           title="Contact Us"

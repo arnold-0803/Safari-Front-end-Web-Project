@@ -20,7 +20,7 @@ const DestinationCard = ({tripData, only}) => {
   return (
     <div className="t-card text-start shadow-[0_5px_25px_2px_rgba(0,0,0,0.11)] 
       rounded-[7px] overflow-hidden relative">
-      <div className="t-image h-[250px] overflow-hidden">
+      <div className="t-image max-[595px]:h-[180px] overflow-hidden">
         <img className="w-[100%] h-[100%] transition-[0.3s] ease-in-out hover:scale-[1.3]"
           src={tripData.image} alt=""
         />

@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import PopularPlaces from "../components/PopularPlaces";
 import image from "../images/premium_photo.avif";
 import { useEffect, useRef, useState } from "react";
-import MainFrame from "../components/HeroFrame";
 import Destinations from "../components/Destinations";
 import AdventureActivities from "../components/AdventureActivities";
 import SwiperScreen from "../components/SwiperScreen";
@@ -11,6 +10,7 @@ import useFetch from "../components/useFetch";
 import CountUpBanner from "../components/CountUpBanner";
 import { countUpData, reviewsData } from "../data/data";
 import ClientsReviews from "../components/ClientsReviews";
+import HeroFrame from "../components/HeroFrame";
 
 const Home = ({scrollToTop}) => {
 
@@ -62,14 +62,13 @@ const Home = ({scrollToTop}) => {
         <Navbar/>
       </div>
       <div>
-        <MainFrame 
+        <HeroFrame 
           cName="hero"
           heroImage={image}
           title="Monumental Tour Experience"
-          text="Choose Your Favourite Destination"
-          subText="Subscribe for latest news"
+          text="Choose Your Favourite Destination in Kenya"
+          subText="Subscribe for news letters, clikc to"
           buttonText="subscribe"
-          btnClass="button"
           handleToggle={handleToggle}
           toggle={toggle}
           setToggle={setToggle}

@@ -74,9 +74,8 @@ nav .menubar i{
   @apply text-[#01959ad3];
 }
 
-.hero-text .button{
-  @apply bg-[#fff] p-[10px_15px] rounded-[6px] text-[1.1rem] font-bold
-  tracking-[2px] text-[#01959a] hover:bg-[#01959a] hover:text-[#fff];
+.hero-text p:hover > span{
+  @apply underline;
 }
 
 .sub-hero{
@@ -140,12 +139,14 @@ nav .menubar i{
   margin-left: 20px;
 }
 
+.service .cards ul,
 .search .cards ul,
 .favourite .cards ul{
   @apply grid grid-cols-[repeat(auto-fit,minmax(354px,max-content))] justify-center 
   items-start pt-[30px] max-[875px]:grid-cols-[repeat(auto-fit,minmax(280px,max-content))];
 }
 
+.service .cards ul li,
 .search .cards ul li,
 .favourite .cards ul li{
   @apply max-w-[354px] max-[875px]:max-w-[280px];

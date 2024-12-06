@@ -2,9 +2,9 @@ import Footer from "../components/Foofer";
 import Navbar from "../components/Navbar";
 import image from "../images/image.png";
 import { useEffect } from "react";
-import MainFrame from "../components/HeroFrame";
 import Destinations from "../components/Destinations";
 import useFetch from "../components/useFetch";
+import HeroFrame from "../components/HeroFrame";
 
 const Service = ({scrollToTop}) => {
 
@@ -26,13 +26,13 @@ const Service = ({scrollToTop}) => {
     <div className="service">
       <Navbar/>
       <div>
-        <MainFrame 
+        <HeroFrame 
           cName="sub-hero"
           heroImage={image}
           title="Find A Destination"
         />
       </div>
-      <div>
+      <div className="cards">
         <Destinations 
           heading="Destinations in Kenya"
           destinations={destinations}
