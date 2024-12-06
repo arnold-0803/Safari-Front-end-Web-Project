@@ -80,7 +80,7 @@ const Home = ({scrollToTop}) => {
           destinations={data2.places}
         />
       </div>
-      <div>
+      <div className="cards">
         <Destinations 
           heading="Recent Tours"
           destinations={dataOne}
