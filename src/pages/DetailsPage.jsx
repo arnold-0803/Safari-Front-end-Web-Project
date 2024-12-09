@@ -57,46 +57,53 @@ function DetailsPage({scrollToTop}) {
         </h1>
         <div className='xl:px-[160px] max-[1279px]:px-[15px]'>
           {detailsData && 
-            <div className='flex justify-center items-center border-[2px] p-[20px] gap-[2rem]
-              max-[600px]:flex-col'>
-              <div className="flex-1">
-                <div className='relative'>
-                  <img className='w-full rounded-[5px]'
-                    src={detailsData.image} alt={detailsData.heading}
-                  />
-                  <i className={`fa-solid fa-heart absolute top-3 right-3 text-[1.4rem]
-                    cursor-pointer ${isFavourite ? "text-red-400" : "text-[#fff]"}`}
-                    onClick={handleAddRemoveFavourite}></i>
+            <>
+              <div className='flex justify-center items-center border-[2px] p-[20px] gap-[2rem]
+                max-[600px]:flex-col'>
+                <div className="flex-1">
+                  <div className='relative'>
+                    <img className='w-full rounded-[5px]'
+                      src={detailsData.image} alt={detailsData.heading}
+                    />
+                    <i className={`fa-solid fa-heart absolute top-3 right-3 text-[1.4rem]
+                      cursor-pointer ${isFavourite ? "text-red-400" : "text-[#fff]"}`}
+                      onClick={handleAddRemoveFavourite}></i>
+                  </div>
+                  <div className='text-start'>
+                    <h3 className='md:text-[2.2rem] font-extralight text-[#01959a]'>
+                      {detailsData.heading}
+                    </h3>
+                    <p className="text-[#01959a] font-semibold text-[1.1rem]">Rating
+                      {detailsData.ratings.map((rating, idx) => (
+                        <i className={`${rating} ml-[5px] text-yellow-300`} key={idx}></i>
+                      ))}
+                    </p>
+                    <p className="text-[#01959a7c] font-semibold text-[1.1rem]">
+                      <i className='fa-solid fa-location-dot mr-[5px] text-[#01959a]'></i>
+                      {detailsData.location}
+                    </p>
+                    <p className="text-[#01959a7c] font-semibold text-[1.1rem]">
+                      <i className='fa-solid fa-hourglass-end mr-[5px] text-[#01959a]'></i>
+                      {detailsData.days} Day(s)
+                    </p>
+                    <p className="text-[#01959a] font-semibold md:text-[1.8rem]
+                      max-[767px]:text-[1.3rem]">Payment:
+                      <span className='ml-[5px] text-[#01959a7c]'>
+                        Kes {detailsData.price}
+                      </span>
+                    </p>
+                  </div>
                 </div>
-                <div className='text-start'>
-                  <h3 className='md:text-[2.2rem] font-extralight text-[#01959a]'>
-                    {detailsData.heading}
-                  </h3>
-                  <p className="text-[#01959a] font-semibold text-[1.1rem]">Rating
-                    {detailsData.ratings.map((rating, idx) => (
-                      <i className={`${rating} ml-[5px] text-yellow-300`} key={idx}></i>
-                    ))}
-                  </p>
-                  <p className="text-[#01959a7c] font-semibold text-[1.1rem]">
-                    <i className='fa-solid fa-location-dot mr-[5px] text-[#01959a]'></i>
-                    {detailsData.location}
-                  </p>
-                  <p className="text-[#01959a7c] font-semibold text-[1.1rem]">
-                    <i className='fa-solid fa-hourglass-end mr-[5px] text-[#01959a]'></i>
-                    {detailsData.days} Day(s)
-                  </p>
-                  <p className="text-[#01959a] font-semibold md:text-[1.8rem]
-                    max-[767px]:text-[1.3rem]">Payment:
-                    <span className='ml-[5px] text-[#01959a7c]'>
-                      Kes {detailsData.price}
-                    </span>
-                  </p>
+                <div className="flex-1">
+                  <BookingForm/>
                 </div>
               </div>
-              <div className="flex-1">
-                <BookingForm/>
+              <div className='pt-[20px]'>
+                <p className='border-[2px] p-[15px] text-gray-500 shadow-lg'>
+                  {detailsData.description}
+                </p>
               </div>
-            </div>
+            </>
           }
         </div>
       </div>
