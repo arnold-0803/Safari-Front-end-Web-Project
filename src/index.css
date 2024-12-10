@@ -197,13 +197,12 @@ nav .menubar i{
 }
 
 .reviews ul::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 .reviews ul::-webkit-scrollbar-thumb {
   background: #01959a9c;
-  border-radius: 4px;
 }
 
 .reviews ul::-webkit-scrollbar-thumb:hover {
