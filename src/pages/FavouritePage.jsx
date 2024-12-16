@@ -4,13 +4,13 @@ import Footer from '../components/Foofer';
 import { useFavourite } from '../context/favourite-context-provider';
 import Destinations from '../components/Destinations';
 
-function FavouritePage({scrollToTop}) {
+function FavouritePage() {
 
   const {favouriteItems} = useFavourite();
 
   useEffect(() => {
-    scrollToTop();
-  }, [scrollToTop]);
+    window.scrollTo({top: 0, behavior: "smooth"});
+  }, []);
 
   return (
     <div className='favourite'>

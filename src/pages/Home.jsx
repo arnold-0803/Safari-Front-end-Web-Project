@@ -12,13 +12,13 @@ import { countUpData, reviewsData } from "../data/data";
 import ClientsReviews from "../components/ClientsReviews";
 import HeroFrame from "../components/HeroFrame";
 
-const Home = ({scrollToTop}) => {
+const Home = () => {
 
   const [toggle, setToggle] = useState(false);
   const containerRef = useRef(null);
-  const {data:data1} = useFetch("/db/db1.json");
-  const {data:data2} = useFetch("/db/db2.json");
-  const {data:data3} = useFetch("/db/db3.json");
+  const {data:data1, loading:loading1} = useFetch("/db/db1.json");
+  const {data:data2, loading:loading2} = useFetch("/db/db2.json");
+  const {data:data3, loading:loading3} = useFetch("/db/db3.json");
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -43,8 +43,8 @@ const Home = ({scrollToTop}) => {
   }, [toggle]);
 
   useEffect(() => {
-    scrollToTop();
-  }, [scrollToTop]);
+    window.scrollTo({top: 0, behavior: "smooth"});
+  }, []);
 
   const breakpoints = {
     0:{slidesPerView: 1},
@@ -55,6 +55,9 @@ const Home = ({scrollToTop}) => {
 
   const specificIndex = [5, 6, 7];
   const dataOne = data1.places ? specificIndex.map(idx => data1.places[idx]).filter(Boolean) : [];
+
+  if (loading1 || loading2 || loading3) 
+    return <p className="text-[#01959a] mt-[20%] text-[2rem] font-thin">Loading...</p>;
 
   return (
     <div className="home">

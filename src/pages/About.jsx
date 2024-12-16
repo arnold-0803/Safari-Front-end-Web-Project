@@ -6,7 +6,7 @@ import image from "../images/tour.avif";
 import { faqDatat } from "../data/data";
 import HeroFrame from "../components/HeroFrame";
 
-const About = ({scrollToTop}) => {
+const About = () => {
 
   const [isOpen, setIsOpen] = useState(null);
 
@@ -15,8 +15,8 @@ const About = ({scrollToTop}) => {
   }
 
   useEffect(() => {
-    scrollToTop();
-  }, [scrollToTop]);
+    window.scrollTo({top: 0, behavior: "smooth"});
+  }, []);
 
   return (
     <div className="about">
