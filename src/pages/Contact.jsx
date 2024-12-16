@@ -5,11 +5,11 @@ import Navbar from "../components/Navbar";
 import image from "../images/photo.avif";
 import HeroFrame from "../components/HeroFrame";
 
-const Contact = ({scrollToTop}) => {
+const Contact = () => {
 
   useEffect(() => {
-    scrollToTop();
-  }, [scrollToTop]);
+    window.scrollTo({top: 0, behavior: "smooth"});
+  }, []);
 
   return (
     <div className="contact">

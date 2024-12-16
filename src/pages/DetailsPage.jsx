@@ -6,7 +6,7 @@ import BookingForm from '../components/BookingForm';
 import Footer from '../components/Foofer';
 import { useFavourite } from '../context/favourite-context-provider';
 
-function DetailsPage({scrollToTop}) {
+function DetailsPage() {
   
   const {id, source} = useParams();
   const { data:data1 } = useFetch("/db/db1.json");
@@ -29,10 +29,9 @@ function DetailsPage({scrollToTop}) {
     }
   }, [data1, data2, data3, id, source]);
 
-
   useEffect(() => {
-    scrollToTop();
-  }, [scrollToTop]);
+    window.scrollTo({top: 0, behavior: "smooth"});
+  }, []);
 
   const isFavourite = detailsData ? favouriteItems.some(item => item.id === detailsData.id && 
     item.source === detailsData.source) : false;

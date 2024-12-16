@@ -1,12 +1,12 @@
 import Footer from "../components/Foofer";
 import Navbar from "../components/Navbar";
 import image from "../images/image.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Destinations from "../components/Destinations";
 import useFetch from "../components/useFetch";
 import HeroFrame from "../components/HeroFrame";
 
-const Service = ({scrollToTop}) => {
+const Service = () => {
 
   const {data, loading, error} = useFetch("/db/db1.json");
   const destinations = data.places || [];
@@ -15,10 +15,6 @@ const Service = ({scrollToTop}) => {
   const handleLoadMore = () => {
     setVisibleItems(preVisibleItems => preVisibleItems + 6);
   }
-
-  useEffect(() => {
-    scrollToTop();
-  }, [scrollToTop]);
 
   if (loading) 
     return <p className="text-[#01959a] mt-[20%] text-[2rem] font-thin">Loading...</p>;
